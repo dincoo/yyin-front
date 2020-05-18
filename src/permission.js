@@ -31,32 +31,32 @@ router.beforeEach((to, from, next) => {
             to.meta.$keepAlive = false;
         }
     }
-    // const meta = to.meta || {};
-    // 自添加
-    const value = to.query.src || to.fullPath;
-    const label = to.query.name || to.name;
-    const meta = to.meta || router.$avueRouter.meta || {};
-    const i18n = to.query.i18n;
-    if (meta.isTab !== false && !validatenull(value) && !validatenull(label)) {
-        store.commit('ADD_TAG', {
-            label: label,
-            value: value,
-            params: to.params,
-            query: to.query,
-            meta: (() => {
-                if (!i18n) {
-                    return meta
-                }
-                return {
-                    i18n: i18n
-                }
-            })(),
-            group: router.$avueRouter.group || []
-        });
-    }
-    console.log(to)
-    next()
-    return
+    const meta = to.meta || {};
+    // // 自添加
+    // const value = to.query.src || to.fullPath;
+    // const label = to.query.name || to.name;
+    // const meta = to.meta || router.$avueRouter.meta || {};
+    // const i18n = to.query.i18n;
+    // if (meta.isTab !== false && !validatenull(value) && !validatenull(label)) {
+    //     store.commit('ADD_TAG', {
+    //         label: label,
+    //         value: value,
+    //         params: to.params,
+    //         query: to.query,
+    //         meta: (() => {
+    //             if (!i18n) {
+    //                 return meta
+    //             }
+    //             return {
+    //                 i18n: i18n
+    //             }
+    //         })(),
+    //         group: router.$avueRouter.group || []
+    //     });
+    // }
+    // console.log(to)
+    // next()
+    // return
 
     if (getToken()) {
         if (store.getters.isLock && to.path !== lockPage) { //如果系统激活锁屏，全部跳转到锁屏页

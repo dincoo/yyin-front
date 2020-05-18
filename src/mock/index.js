@@ -1,12 +1,14 @@
-import user from './user';
-import menu from './menu';
-
-/**
- * 模拟数据mock
- *
- * mock是否开启模拟数据拦截
- */
-
-user({mock: true});
-
-menu({mock: true});
+const express = require('express');
+const app = express()
+const userRoutes = require('./user');
+app.use('/vz-island/sys', userRoutes);
+app.listen('3618', () => {
+    console.log('Mock server is listening at http://localhost:3618');
+});
+app.get('/', function(req, res) {
+    if (req.protocol === 'https') {
+        res.status(200).send('Welcome to Safety Land!');
+    } else {
+        res.status(200).send('Welcome!');
+    }
+});

@@ -31,13 +31,16 @@ export default {
     this.getMenu();
   },
   computed: {
-    ...mapGetters(["tagCurrent", "menu"])
+    ...mapGetters(["tagCurrent", "menu","menuAll"])
   },
   methods: {
     getMenu() {
       this.$store.dispatch("GetTopMenu").then(res => {
         this.items = res;
         console.log(res)
+        if(this.items.length>0){
+          this.openMenu(this.items[0])
+        }
       });
     },
     generateTitle(item) {
@@ -48,25 +51,34 @@ export default {
     },
     openMenu(item) {
       this.$store.dispatch("GetMenu", item.parentId).then(data => {
-        if (data.length !== 0) {
-          this.$router.$avueRouter.formatRoutes(data, true);
+        
+        let childMenu=[]
+        for(let el of this.menuAll){
+          if(el.parentId==item.id){
+            childMenu.push(el)
+          }
         }
+        console.log(childMenu)
+        // if (data.length !== 0) {
+          this.$router.$avueRouter.formatRoutes(childMenu, true);
+        // }
+        this.$store.commit('SET_MENU',childMenu)
         let itemActive,
           childItemActive = 0;
         if (item.path) {
           itemActive = item;
         } else {
-          if (this.menu[childItemActive].length == 0) {
-            itemActive = this.menu[childItemActive];
+          if (this.menuAll[childItemActive].length == 0) {
+            itemActive = this.menuAll[childItemActive];
           } else {
-            itemActive = this.menu[childItemActive].children[childItemActive];
+            itemActive = this.menuAll[childItemActive].children[childItemActive];
           }
         }
         this.$router.push({
           path: this.$router.$avueRouter.getPath({
             name: itemActive.label,
             src: itemActive.path,
-            i18n: itemActive.meta.i18n
+            i18n: itemActive.meta?itemActive.meta.i18n:''
           })
         });
       });

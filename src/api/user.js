@@ -4,7 +4,6 @@ import { baseUrl } from '@/config/env';
 // 用户名密码登录
 export const loginByUsername = (tenantId, account, password, type, key, code) => request({
     url: '/vz-island/sys/login',
-    // url: '/api/blade-auth/oauth/token',
     method: 'post',
     data: {
         captcha: code,

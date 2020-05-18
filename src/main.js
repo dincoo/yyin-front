@@ -15,7 +15,7 @@ import {
 } from '@/config/env';
 import i18n from './lang' // Internationalization
 import './styles/common.scss';
-
+// require('./mock/index')
 import basicContainer from './components/basic-container/main'
 
 Vue.use(router)
@@ -24,11 +24,11 @@ Vue.use(Element, {
     i18n: (key, value) => i18n.t(key, value)
 })
 Vue.use(window.AVUE, {
-    i18n: (key, value) => i18n.t(key, value)
-})
-//注册全局容器
+        i18n: (key, value) => i18n.t(key, value)
+    })
+    //注册全局容器
 Vue.component('basicContainer', basicContainer)
-// 加载相关url地址
+    // 加载相关url地址
 Object.keys(urls).forEach(key => {
     Vue.prototype[key] = urls[key];
 })

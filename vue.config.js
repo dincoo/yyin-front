@@ -27,7 +27,7 @@ module.exports = {
         // 反向代理配置
         proxy: {
             '/vz-island': {
-                target: 'http://192.168.85.35:8005/',
+                target: 'http://localhost:3618',
                 ws: true,
                 pathRewrite: {
                     // '^/api': '/vz-island'

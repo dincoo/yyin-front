@@ -155,9 +155,10 @@ const user = {
                     const data = res.data.asider
                     let menu = deepClone(data);
                     menu.forEach(ele => {
-                        addPath(ele, true);
-                    })
-                    commit('SET_MENU', menu)
+                            addPath(ele, true);
+                        })
+                        // commit('SET_MENU', menu)
+                    commit('SET_MENU_ALL', menu)
                     dispatch('GetButtons');
                     resolve(menu)
                 })
