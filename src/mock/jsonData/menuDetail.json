@@ -1,0 +1,25 @@
+{
+    "data": {
+        "createBy": "admin",
+        "createTime": "2019-03-01 11:23:08",
+        "enable": 0,
+        "icon": "fa fa-sketch",
+        "id": "120",
+        "name": "管理中心",
+        "orderNum": 0,
+        "parentId": "0",
+        "parentName": "",
+        "perms": "",
+        "remark": "",
+        "subSysMenus": [
+
+        ],
+        "type": 3,
+        "updateBy": "admin",
+        "updateTime": "2019-04-09 09:54:57",
+        "uri": "/indexPage/manageCenter"
+    },
+    "httpCode": 200,
+    "msg": "请求成功",
+    "timestamp": 1590378268010
+}

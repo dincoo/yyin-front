@@ -1,0 +1,168 @@
+{
+    "data": [{
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "id": "0",
+            "name": "总裁办",
+            "orderNum": 1,
+            "parentId": "-1",
+            "parentName": "",
+            "remark": "",
+            "roleIdList": [
+
+            ],
+            "updateBy": "",
+            "updateTime": null
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "id": "dp451066019528572928",
+            "name": "大数据风控部",
+            "orderNum": 2,
+            "parentId": "0",
+            "parentName": "总裁办",
+            "remark": "",
+            "roleIdList": [
+
+            ],
+            "updateBy": "admin",
+            "updateTime": "2019-03-13 14:25:03"
+        },
+        {
+            "createBy": "jasmine",
+            "createTime": "2019-03-13 17:02:03",
+            "enable": 1,
+            "id": "dp555435421280002048",
+            "name": "开发组",
+            "orderNum": 0,
+            "parentId": "dp550339728806797312",
+            "parentName": "信息技术部",
+            "remark": "",
+            "roleIdList": [
+
+            ],
+            "updateBy": "",
+            "updateTime": null
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-12 17:28:02",
+            "enable": 1,
+            "id": "dp555079569637400576",
+            "name": "客户服务部",
+            "orderNum": 3,
+            "parentId": "0",
+            "parentName": "总裁办",
+            "remark": "",
+            "roleIdList": [
+
+            ],
+            "updateBy": "",
+            "updateTime": null
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-12 17:27:34",
+            "enable": 1,
+            "id": "dp555079454839300096",
+            "name": "运营企划部",
+            "orderNum": 7,
+            "parentId": "0",
+            "parentName": "总裁办",
+            "remark": "",
+            "roleIdList": [
+
+            ],
+            "updateBy": "",
+            "updateTime": null
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-12 17:27:07",
+            "enable": 1,
+            "id": "dp555079340750036992",
+            "name": "法律合规部",
+            "orderNum": 6,
+            "parentId": "0",
+            "parentName": "总裁办",
+            "remark": "",
+            "roleIdList": [
+
+            ],
+            "updateBy": "",
+            "updateTime": null
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-12 17:26:45",
+            "enable": 1,
+            "id": "dp555079247137366016",
+            "name": "营销中心",
+            "orderNum": 5,
+            "parentId": "0",
+            "parentName": "总裁办",
+            "remark": "",
+            "roleIdList": [
+
+            ],
+            "updateBy": "",
+            "updateTime": null
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-12 17:26:18",
+            "enable": 1,
+            "id": "dp555079135195586560",
+            "name": "综合管理部",
+            "orderNum": 4,
+            "parentId": "0",
+            "parentName": "总裁办",
+            "remark": "",
+            "roleIdList": [
+
+            ],
+            "updateBy": "",
+            "updateTime": null
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-27 15:44:09",
+            "enable": 1,
+            "id": "dp550342386154233856",
+            "name": "产品部",
+            "orderNum": 1,
+            "parentId": "0",
+            "parentName": "总裁办",
+            "remark": "",
+            "roleIdList": [
+
+            ],
+            "updateBy": "admin",
+            "updateTime": "2019-03-12 17:25:46"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-27 15:33:36",
+            "enable": 1,
+            "id": "dp550339728806797312",
+            "name": "信息技术部",
+            "orderNum": 0,
+            "parentId": "0",
+            "parentName": "总裁办",
+            "remark": "",
+            "roleIdList": [
+
+            ],
+            "updateBy": "jasmine",
+            "updateTime": "2019-03-13 16:34:00"
+        }
+    ],
+    "iTotalRecords": 10,
+    "iTotalDisplayRecords": 10,
+    "httpCode": 200,
+    "msg": "请求成功",
+    "timestamp": 1590395201222
+}

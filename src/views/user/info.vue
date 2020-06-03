@@ -11,7 +11,7 @@
 
 <script>
   import option from "@/const/user/info";
-  import {getUserInfo, update, updatePassword} from "@/api/system/user";
+  import {resetPwd,userDetails,ModifyUser} from '@/api/sysManageApi/adminApi'
 
 
   export default {
@@ -28,7 +28,7 @@
     methods: {
       handleSubmit() {
         if (this.type === "info") {
-          update(this.form).then(res => {
+          ModifyUser(this.form).then(res => {
             if (res.data.success) {
               this.$message({
                 type: "success",
@@ -42,7 +42,7 @@
             }
           })
         } else {
-          updatePassword(this.form.oldPassword, this.form.newPassword, this.form.newPassword1).then(res => {
+          resetPwd(this.form.oldPassword, this.form.newPassword, this.form.newPassword1).then(res => {
             if (res.data.success) {
               this.$message({
                 type: "success",
@@ -59,14 +59,15 @@
       },
       handleWitch() {
         if (this.type === "info") {
-          getUserInfo().then(res => {
-            const user = res.data.data;
+          let userInfo=this.$store.getters.userInfo
+          userDetails(userInfo.id).then(res => {
+            const user = res.data;
             this.form = {
               id: user.id,
               avatar: user.avatar,
-              name: user.name,
-              realName: user.realName,
-              phone: user.phone,
+              name: user.username,
+              deptName: user.deptName,
+              phone: user.mobile,
               email: user.email,
             }
           });

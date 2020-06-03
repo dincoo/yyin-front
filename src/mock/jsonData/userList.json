@@ -1,0 +1,117 @@
+{
+    "data": {
+        "currPage": 1,
+        "list": [{
+                "createBy": "",
+                "createTime": null,
+                "deptId": "dp550339728806797312",
+                "deptName": "信息技术部",
+                "email": "22@qq.com",
+                "id": "SU_447071843556261888",
+                "lastLoginIp": "",
+                "lastLoginTime": null,
+                "loginName": "",
+                "mobile": "13500000000",
+                "passwd": "171bfbf102d2598258b62dcaad1c50ebbba3860d4272dbca442de47625988c8a",
+                "roleIdList": [
+
+                ],
+                "secretKey": "",
+                "status": 1,
+                "updateBy": "admin",
+                "updateTime": "2019-06-04 17:21:10",
+                "username": "admin"
+            },
+            {
+                "createBy": "admin",
+                "createTime": "2019-10-31 15:36:57",
+                "deptId": "",
+                "deptName": "",
+                "email": "hezy@vzoom.com",
+                "id": "SU_639487988808572928",
+                "lastLoginIp": "",
+                "lastLoginTime": null,
+                "loginName": "",
+                "mobile": "18812011234",
+                "passwd": "78ebf692d88661fe4ce22f7fe2883f8b41f96c8d753a9f9afb45703d409536f0",
+                "roleIdList": [
+
+                ],
+                "secretKey": "",
+                "status": 1,
+                "updateBy": "",
+                "updateTime": null,
+                "username": "hzy"
+            },
+            {
+                "createBy": "jasmine",
+                "createTime": "2019-03-13 16:37:17",
+                "deptId": "dp550342386154233856",
+                "deptName": "产品部",
+                "email": "28932123@qq.com",
+                "id": "SU_555429185138483200",
+                "lastLoginIp": "",
+                "lastLoginTime": null,
+                "loginName": "",
+                "mobile": "18636354458",
+                "passwd": "171bfbf102d2598258b62dcaad1c50ebbba3860d4272dbca442de47625988c8a",
+                "roleIdList": [
+
+                ],
+                "secretKey": "",
+                "status": 1,
+                "updateBy": "jasmine",
+                "updateTime": "2019-03-13 17:19:36",
+                "username": "configTest"
+            },
+            {
+                "createBy": "admin",
+                "createTime": "2019-03-13 14:37:01",
+                "deptId": "dp550339728806797312",
+                "deptName": "信息技术部",
+                "email": "289324428@qq.com",
+                "id": "SU_555398918751412224",
+                "lastLoginIp": "",
+                "lastLoginTime": null,
+                "loginName": "",
+                "mobile": "18850258247",
+                "passwd": "171bfbf102d2598258b62dcaad1c50ebbba3860d4272dbca442de47625988c8a",
+                "roleIdList": [
+
+                ],
+                "secretKey": "",
+                "status": 1,
+                "updateBy": "jasmine",
+                "updateTime": "2019-07-10 13:35:10",
+                "username": "jasmine"
+            },
+            {
+                "createBy": "admin",
+                "createTime": "2019-02-28 14:55:52",
+                "deptId": "dp550342386154233856",
+                "deptName": "产品部",
+                "email": "23696547@qq.com",
+                "id": "SU_550692623410552832",
+                "lastLoginIp": "",
+                "lastLoginTime": null,
+                "loginName": "",
+                "mobile": "18664586966",
+                "passwd": "171bfbf102d2598258b62dcaad1c50ebbba3860d4272dbca442de47625988c8a",
+                "roleIdList": [
+
+                ],
+                "secretKey": "",
+                "status": 1,
+                "updateBy": "",
+                "updateTime": null,
+                "username": "AppDept"
+            }
+        ],
+        "pageSize": 10,
+        "totalCount": 5,
+        "totalPage": 1
+    },
+    "httpCode": 200,
+    "msg": "请求成功",
+    "timestamp": 1590393576265
+}

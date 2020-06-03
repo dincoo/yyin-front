@@ -1,7 +1,12 @@
 const express = require('express');
 const Mock = require('mockjs');
 const apiRoutes = express.Router();
-
+const menuAll = require('./jsonData/menuAll.json');
+const menuSelect = require('./jsonData/menuSelect.json');
+const menuDetail = require('./jsonData/menuDetail.json');
+const userList = require('./jsonData/userList.json')
+const userDetail = require('./jsonData/userDetail.json')
+    // console.log(menuAll)
 let random = Math.random() * 500 + 500;
 // 访问 /user/ 时
 apiRoutes.post('/login', function(req, res) {
@@ -11,12 +16,57 @@ apiRoutes.post('/login', function(req, res) {
             msg: "请求成功",
             timestamp: 1589532854259,
             data: {
-                accessToken: '1235656'
+                accessToken: '1235656',
+                id: '12345'
             }
         });
     }, random);
 });
-// 访问 /user/1111 时
+apiRoutes.get('/menu/list', function(req, res) {
+    setTimeout(() => {
+        res.json(menuAll);
+    }, random);
+});
+apiRoutes.get('/menu/select', function(req, res) {
+    setTimeout(() => {
+        res.json(menuSelect);
+    }, random);
+});
+apiRoutes.get('/menu/info/:menuId', function(req, res) {
+    setTimeout(() => {
+        res.json(menuDetail);
+    }, random);
+});
+apiRoutes.put('/menu/update', function(req, res) {
+    setTimeout(() => {
+        res.json({
+            data: 1,
+            httpCode: 200,
+            msg: "请求成功",
+            timestamp: 1590378579738
+        });
+    }, random);
+});
+apiRoutes.post('/menu/save', function(req, res) {
+    setTimeout(() => {
+        res.json({
+            data: 1,
+            httpCode: 200,
+            msg: "请求成功",
+            timestamp: 1590378579738
+        });
+    }, random);
+});
+apiRoutes.delete('/menu/delete', function(req, res) {
+    setTimeout(() => {
+        res.json({
+            data: 1,
+            httpCode: 200,
+            msg: "请求成功",
+            timestamp: 1590378579738
+        });
+    }, random);
+});
 apiRoutes.get('/menu/listMenu', function(req, res) {
     setTimeout(() => {
         res.json({
@@ -29,8 +79,7 @@ apiRoutes.get('/menu/listMenu', function(req, res) {
                         { id: "user", indexNum: "1", name: "管理员管理", parentPath: "", path: "/sysManage/user" },
                         { id: "menu", indexNum: "3", name: "菜单管理", parentPath: "", path: "/sysManage/menu" },
                         { id: "role", indexNum: "2", name: "角色管理", parentPath: "", path: "/sysManage/role" },
-                        { id: "department", indexNum: "5", name: "部门管理", parentPath: "", path: "/sysManage/department" },
-                        { id: "log", indexNum: "6", name: "日志管理", parentPath: "", path: "/sysManage/log" }
+                        { id: "department", indexNum: "5", name: "部门管理", parentPath: "", path: "/sysManage/department" }
                     ],
                     iconClass: "fa fa-cog",
                     id: "1",
@@ -39,7 +88,7 @@ apiRoutes.get('/menu/listMenu', function(req, res) {
                     parentId: "120",
                     url: "#",
                 }, {
-                    "name": "工具",
+                    "name": "示例",
                     "url": "#",
                     iconClass: "iconfont iconicon_savememo",
                     id: "2",
@@ -54,27 +103,12 @@ apiRoutes.get('/menu/listMenu', function(req, res) {
                             "path": "/util/form"
                         },
                         {
-                            "name": "日志",
-                            "path": "/util/logs"
-                        },
-                        {
                             "name": "表格权限控制",
                             "path": "/util/permission"
                         },
                         {
-                            "name": "存储",
-                            "path": "/util/store"
-                        },
-                        {
                             "name": "表格",
                             "path": "/util/table"
-                        },
-                        {
-                            "name": "标签",
-                            "path": "/util/tags"
-                        }, {
-                            "name": "测试",
-                            "path": "/util/test"
                         }
                     ]
                 }],
@@ -99,5 +133,44 @@ apiRoutes.get('/menu/listMenu', function(req, res) {
         });
     }, random);
 });
-
+apiRoutes.post('/user/list', function(req, res) {
+    setTimeout(() => {
+        res.json(userList);
+    }, random);
+})
+apiRoutes.put('/user/update', function(req, res) {
+    setTimeout(() => {
+        res.json({
+            data: 1,
+            httpCode: 200,
+            msg: "请求成功",
+            timestamp: 1590378579738
+        });
+    }, random);
+});
+apiRoutes.post('/user/save', function(req, res) {
+    setTimeout(() => {
+        res.json({
+            data: 1,
+            httpCode: 200,
+            msg: "请求成功",
+            timestamp: 1590378579738
+        });
+    }, random);
+});
+apiRoutes.delete('/user/delete', function(req, res) {
+    setTimeout(() => {
+        res.json({
+            data: 1,
+            httpCode: 200,
+            msg: "请求成功",
+            timestamp: 1590378579738
+        });
+    }, random);
+});
+apiRoutes.get('/user/info/:userId', function(req, res) {
+    setTimeout(() => {
+        res.json(userDetail);
+    }, random);
+});
 module.exports = apiRoutes;

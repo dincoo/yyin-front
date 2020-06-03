@@ -1,19 +1,20 @@
 <template>
-  <div class="avue-contail"
+  <div class="avue-contail" :style="{}"
        :class="{'avue--collapse':isCollapse}">
-    <div class="avue-header">
+    <div class="avue-header" :style="{paddingLeft:layoutType=='nav'?'240px':0}">
       <!-- 顶部导航栏 -->
       <top />
     </div>
 
     <div class="avue-layout">
-      <div class="avue-left">
+      <div class="avue-left" v-if="layoutType==='nav'">
         <!-- 左侧导航栏 -->
         <sidebar />
       </div>
-      <div class="avue-main">
+      <div class="avue-main" :style="{}">
         <!-- 顶部标签卡 -->
-        <tags />
+        <tags v-if="layoutType==='nav'"/>
+        <breadcrumb v-else></breadcrumb>
         <!-- 主体视图层 -->
         <el-scrollbar style="height:100%">
           <keep-alive>
@@ -43,6 +44,7 @@ import tags from "./tags";
 import top from "./top/";
 import sidebar from "./sidebar/";
 import admin from "@/util/admin";
+import breadcrumb from './breadcrumb'
 // import { validatenull } from "@/util/validate";
 // import { calcDate } from "@/util/date.js";
 // import { getStore } from "@/util/store.js";
@@ -50,15 +52,25 @@ export default {
   components: {
     top,
     tags,
-    sidebar
+    sidebar,
+    breadcrumb
   },
   name: "index",
   data() {
     return {
+      layoutType:'nav',
       //刷新token锁
       refreshLock: false,
       //刷新token的时间
-      refreshTime: ""
+      refreshTime: "",
+      styleConatinObj:{
+        width:'90%',
+        margin:'0 auto'
+      },
+      styleMainObj:{
+        left:'5%',
+        width:'90%'
+      }
     };
   },
   created() {

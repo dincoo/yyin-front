@@ -1,0 +1,126 @@
+{
+    "data": {
+        "currPage": 1,
+        "list": [{
+                "createBy": "admin",
+                "createTime": "2019-10-31 15:36:19",
+                "deptId": "",
+                "deptIdList": [
+
+                ],
+                "deptName": "",
+                "enable": 0,
+                "flag": "",
+                "id": "SR_639487829647319040",
+                "menuIdList": [
+
+                ],
+                "remark": "",
+                "roleName": "银行订单管理",
+                "updateBy": "admin",
+                "updateTime": "2019-10-31 15:37:21"
+            },
+            {
+                "createBy": "admin",
+                "createTime": "2019-07-10 11:46:14",
+                "deptId": "",
+                "deptIdList": [
+
+                ],
+                "deptName": "",
+                "enable": 0,
+                "flag": "1",
+                "id": "SR_598480097452777472",
+                "menuIdList": [
+
+                ],
+                "remark": "",
+                "roleName": "系统管理员",
+                "updateBy": "admin",
+                "updateTime": "2019-07-16 10:14:37"
+            },
+            {
+                "createBy": "jasmine",
+                "createTime": "2019-03-13 16:35:50",
+                "deptId": "",
+                "deptIdList": [
+
+                ],
+                "deptName": "",
+                "enable": 0,
+                "flag": "1",
+                "id": "SR_555428823530758144",
+                "menuIdList": [
+
+                ],
+                "remark": "test123",
+                "roleName": "平台新架构",
+                "updateBy": "admin",
+                "updateTime": "2019-04-24 17:31:40"
+            },
+            {
+                "createBy": "admin",
+                "createTime": "2019-02-28 14:42:58",
+                "deptId": "0",
+                "deptIdList": [
+
+                ],
+                "deptName": "",
+                "enable": 0,
+                "flag": "2",
+                "id": "SR_550689374271987712",
+                "menuIdList": [
+
+                ],
+                "remark": "超级管理员",
+                "roleName": "超级管理员",
+                "updateBy": "admin",
+                "updateTime": "2019-03-13 10:29:29"
+            },
+            {
+                "createBy": "admin",
+                "createTime": "2019-02-27 16:27:18",
+                "deptId": "dp451066019528572928",
+                "deptIdList": [
+
+                ],
+                "deptName": "",
+                "enable": 0,
+                "flag": "2",
+                "id": "SR_550353243395350528",
+                "menuIdList": [
+
+                ],
+                "remark": "运营中心管理员负责运营中心管理",
+                "roleName": "运营中心管理员",
+                "updateBy": "admin",
+                "updateTime": "2019-03-13 09:49:29"
+            },
+            {
+                "createBy": "",
+                "createTime": "2018-05-25 09:26:43",
+                "deptId": "dp550339728806797312",
+                "deptIdList": [
+
+                ],
+                "deptName": "",
+                "enable": 0,
+                "flag": "2",
+                "id": "SR_447408073754017792",
+                "menuIdList": [
+
+                ],
+                "remark": "管理员test",
+                "roleName": "管理中心管理员",
+                "updateBy": "admin",
+                "updateTime": "2019-09-27 18:11:32"
+            }
+        ],
+        "pageSize": 10,
+        "totalCount": 6,
+        "totalPage": 1
+    },
+    "httpCode": 200,
+    "msg": "请求成功",
+    "timestamp": 1590386013755
+}

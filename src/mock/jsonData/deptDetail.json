@@ -1,0 +1,21 @@
+{
+    "data": {
+        "createBy": "",
+        "createTime": null,
+        "enable": 1,
+        "id": "dp451066019528572928",
+        "name": "大数据风控部",
+        "orderNum": 2,
+        "parentId": "0",
+        "parentName": "",
+        "remark": "",
+        "roleIdList": [
+
+        ],
+        "updateBy": "admin",
+        "updateTime": "2019-03-13 14:25:03"
+    },
+    "httpCode": 200,
+    "msg": "请求成功",
+    "timestamp": 1590395505575
+}

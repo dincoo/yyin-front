@@ -1,0 +1,1048 @@
+{
+    "data": [{
+            "createBy": "admin",
+            "createTime": "2019-01-28 11:59:40",
+            "enable": 0,
+            "icon": "fa fa-globe",
+            "id": "96",
+            "name": "统计列表",
+            "orderNum": 0,
+            "parentId": "95",
+            "parentName": "",
+            "perms": "statistics:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:37:44",
+            "uri": "/statistics/statisticsList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2018-12-25 18:15:27",
+            "enable": 0,
+            "icon": "fa fa-address-book-o",
+            "id": "63",
+            "name": "贷前任务列表",
+            "orderNum": 0,
+            "parentId": "62",
+            "parentName": "",
+            "perms": "schedule:preloanJob:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-06-04 16:45:37",
+            "uri": "/schedule/schedulListPreloan"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-09-27 16:38:40",
+            "enable": 0,
+            "icon": "fa fa-btc",
+            "id": "243",
+            "name": "银行机构列表",
+            "orderNum": 0,
+            "parentId": "242",
+            "parentName": "",
+            "perms": "bank:org:config",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/bankOrgConfig/bankOrgConfig"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-09 18:20:33",
+            "enable": 0,
+            "icon": "fa fa-list",
+            "id": "67",
+            "name": "订单列表",
+            "orderNum": 0,
+            "parentId": "66",
+            "parentName": "",
+            "perms": "order:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 14:50:19",
+            "uri": "/order/orderList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-09 18:19:34",
+            "enable": 0,
+            "icon": "fa fa-list-alt",
+            "id": "66",
+            "name": "订单管理",
+            "orderNum": 0,
+            "parentId": "122",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-03-01 14:19:44",
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-09-12 10:52:55",
+            "enable": 0,
+            "icon": "fa fa-bell",
+            "id": "235",
+            "name": "数据治理列表",
+            "orderNum": 0,
+            "parentId": "234",
+            "parentName": "",
+            "perms": "data:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/dataManage/dataManage"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-05-31 11:34:56",
+            "enable": 0,
+            "icon": "fa fa-map",
+            "id": "192",
+            "name": "mq失败队列列表",
+            "orderNum": 0,
+            "parentId": "191",
+            "parentName": "",
+            "perms": "mqErrorQueue:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/mqErrorQueue/mqErrorQueue"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-16 15:56:10",
+            "enable": 0,
+            "icon": "fa fa-hands-usd",
+            "id": "171",
+            "name": "金融云机构列表",
+            "orderNum": 0,
+            "parentId": "170",
+            "parentName": "",
+            "perms": "financeCloud:org:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/financeCloud/orgList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-11 14:42:25",
+            "enable": 0,
+            "icon": "fa fa-rss-square",
+            "id": "166",
+            "name": "反馈流水列表",
+            "orderNum": 0,
+            "parentId": "165",
+            "parentName": "",
+            "perms": "feedback:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/serviceFeedback/serviceFeedback"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-01 11:23:08",
+            "enable": 0,
+            "icon": "fa fa-sketch",
+            "id": "120",
+            "name": "管理中心",
+            "orderNum": 0,
+            "parentId": "0",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 3,
+            "updateBy": "admin",
+            "updateTime": "2019-04-09 09:54:57",
+            "uri": "/indexPage/manageCenter"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-10-31 15:27:04",
+            "enable": 0,
+            "icon": "fa fa-television",
+            "id": "250",
+            "name": "用户申请列表",
+            "orderNum": 0,
+            "parentId": "249",
+            "parentName": "",
+            "perms": "orderInfo:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/orderInfo/orderInfo"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-20 11:55:28",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "99",
+            "name": "订单服务配置列表",
+            "orderNum": 0,
+            "parentId": "98",
+            "parentName": "",
+            "perms": "config:orderConfig:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-03-07 18:35:37",
+            "uri": "/config/orderConfigList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-07-15 19:27:12",
+            "enable": 0,
+            "icon": "fa fa-comments",
+            "id": "228",
+            "name": "场景管理",
+            "orderNum": 1,
+            "parentId": "227",
+            "parentName": "",
+            "perms": "message:situation:manage",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/situation/situationManage"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-25 18:56:52",
+            "enable": 0,
+            "icon": "fa fa-adjust",
+            "id": "114",
+            "name": "认证列表",
+            "orderNum": 1,
+            "parentId": "113",
+            "parentName": "",
+            "perms": "authentication:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/authentication/authentication"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-04 16:41:36",
+            "enable": 0,
+            "icon": "fa fa-address-book-o",
+            "id": "194",
+            "name": "贷后任务列表",
+            "orderNum": 1,
+            "parentId": "62",
+            "parentName": "",
+            "perms": "schedule:postloanJob:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/schedule/schedulListPostloan"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2018-12-29 11:16:37",
+            "enable": 0,
+            "icon": "fa fa-sun",
+            "id": "65",
+            "name": "产品列表",
+            "orderNum": 1,
+            "parentId": "64",
+            "parentName": "",
+            "perms": "product:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-02-28 10:25:19",
+            "uri": "/product/productList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-01 13:50:37",
+            "enable": 0,
+            "icon": "fas fa-tablet-alt",
+            "id": "121",
+            "name": "应用中心",
+            "orderNum": 1,
+            "parentId": "0",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 3,
+            "updateBy": "admin",
+            "updateTime": "2019-09-12 16:04:30",
+            "uri": "/indexPage/applyCenter"
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "icon": "fa fa-user",
+            "id": "2",
+            "name": "管理员管理",
+            "orderNum": 1,
+            "parentId": "1",
+            "parentName": "",
+            "perms": "sys:user:list",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/sysManage/user"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-06 15:12:13",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "208",
+            "name": "数据校验服务配置列表",
+            "orderNum": 1,
+            "parentId": "98",
+            "parentName": "",
+            "perms": "config:ruleCheckConfig:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-09-23 17:16:24",
+            "uri": "/config/ruleCheckConfigList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2018-12-25 18:11:32",
+            "enable": 0,
+            "icon": "fa fa-address-book-o",
+            "id": "62",
+            "name": "调度中心",
+            "orderNum": 1,
+            "parentId": "121",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-03-01 14:19:04",
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2018-12-29 11:13:26",
+            "enable": 0,
+            "icon": "fa fa-sun-o",
+            "id": "64",
+            "name": "平台产品用户管理",
+            "orderNum": 2,
+            "parentId": "122",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-08-14 11:35:30",
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-30 15:29:37",
+            "enable": 0,
+            "icon": "fa fa-rss-square",
+            "id": "185",
+            "name": "服务反馈配置列表",
+            "orderNum": 2,
+            "parentId": "165",
+            "parentName": "",
+            "perms": "feedback:config:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-04-30 15:30:10",
+            "uri": "/serviceFeedback/serviceFeedbackConfig"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-08-14 11:39:16",
+            "enable": 0,
+            "icon": "fa fa-sun-o",
+            "id": "232",
+            "name": "企业用户管理",
+            "orderNum": 2,
+            "parentId": "64",
+            "parentName": "",
+            "perms": "product:userCompany:config",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-08-16 14:12:31",
+            "uri": "/product/userCompany"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-21 14:58:59",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "100",
+            "name": "模型服务配置列表",
+            "orderNum": 2,
+            "parentId": "98",
+            "parentName": "",
+            "perms": "config:modelConfig:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-06-06 15:44:31",
+            "uri": "/config/modelConfigList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-07-15 19:28:51",
+            "enable": 0,
+            "icon": "fa fa-comments",
+            "id": "229",
+            "name": "模板管理",
+            "orderNum": 2,
+            "parentId": "227",
+            "parentName": "",
+            "perms": "message:template:manage",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/template/templateManage"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-01 13:53:53",
+            "enable": 0,
+            "icon": "fa fa-asymmetrik",
+            "id": "122",
+            "name": "运营中心",
+            "orderNum": 2,
+            "parentId": "0",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 3,
+            "updateBy": "superAdmin",
+            "updateTime": "2019-03-01 17:58:55",
+            "uri": "/indexPage/operationCenter"
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "icon": "fa fa-user-secret",
+            "id": "3",
+            "name": "角色管理",
+            "orderNum": 2,
+            "parentId": "1",
+            "parentName": "",
+            "perms": "sys:role:list",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/sysManage/role"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-07-15 19:30:25",
+            "enable": 0,
+            "icon": "fa fa-comments",
+            "id": "230",
+            "name": "请求参数管理",
+            "orderNum": 3,
+            "parentId": "227",
+            "parentName": "",
+            "perms": "message:request:manage",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/paramRecord/paramRecordManage"
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "icon": "fa fa-th-list",
+            "id": "4",
+            "name": "菜单管理",
+            "orderNum": 3,
+            "parentId": "1",
+            "parentName": "",
+            "perms": "sys:menu:list",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/sysManage/menu"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-21 15:02:34",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "102",
+            "name": "PDF服务配置列表",
+            "orderNum": 3,
+            "parentId": "98",
+            "parentName": "",
+            "perms": "config:pdfConfig:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-06-06 15:18:37",
+            "uri": "/config/pdfConfigList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-19 15:48:10",
+            "enable": 0,
+            "icon": "fa fa-rss-square",
+            "id": "221",
+            "name": "反馈模板配置列表",
+            "orderNum": 3,
+            "parentId": "165",
+            "parentName": "",
+            "perms": "feedback:templateConfig:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/serviceFeedback/feedBackTemplateConfig"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-16 15:53:36",
+            "enable": 0,
+            "icon": "fa fa-cloud",
+            "id": "170",
+            "name": "金融云管理",
+            "orderNum": 3,
+            "parentId": "122",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-04-16 16:02:06",
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-20 11:53:52",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "98",
+            "name": "服务配置管理",
+            "orderNum": 4,
+            "parentId": "121",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-07-10 11:27:10",
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-07-15 19:31:59",
+            "enable": 0,
+            "icon": "fa fa-comments",
+            "id": "231",
+            "name": "消息结果管理",
+            "orderNum": 4,
+            "parentId": "227",
+            "parentName": "",
+            "perms": "message:result:manage",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/sendingResult/sendingResultManage"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-08 10:40:54",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "149",
+            "name": "计费服务配置列表",
+            "orderNum": 4,
+            "parentId": "98",
+            "parentName": "",
+            "perms": "config:chargeConfig:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-03-11 17:06:46",
+            "uri": "/config/chargeConfig"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-21 15:00:19",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "101",
+            "name": "报文服务配置列表",
+            "orderNum": 5,
+            "parentId": "98",
+            "parentName": "",
+            "perms": "config:reportConfig:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-06-06 15:19:29",
+            "uri": "/config/datagramConfigList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-28 11:57:16",
+            "enable": 0,
+            "icon": "fa fa-globe",
+            "id": "95",
+            "name": "订单统计",
+            "orderNum": 5,
+            "parentId": "121",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-03-01 14:18:54",
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-27 15:07:44",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "115",
+            "name": "部门管理",
+            "orderNum": 5,
+            "parentId": "1",
+            "parentName": "",
+            "perms": "sys:dept:list",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/sysManage/department"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-25 15:32:50",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "106",
+            "name": "新增服务配置",
+            "orderNum": 6,
+            "parentId": "98",
+            "parentName": "",
+            "perms": "config:manager:add",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-06-06 15:20:04",
+            "uri": "/config/configAdd"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-11 14:40:29",
+            "enable": 0,
+            "icon": "fa fa-rss-square",
+            "id": "165",
+            "name": "服务反馈管理",
+            "orderNum": 6,
+            "parentId": "121",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-08 16:37:46",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "164",
+            "name": "日志管理",
+            "orderNum": 6,
+            "parentId": "1",
+            "parentName": "",
+            "perms": "sys:log:list",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-04-08 16:41:19",
+            "uri": "/sysManage/log"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-25 16:08:11",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "107",
+            "name": "参数管理",
+            "orderNum": 7,
+            "parentId": "1",
+            "parentName": "",
+            "perms": "parameter:manage:list",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-02-25 16:20:37",
+            "uri": "/sysManage/parameter"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-18 19:37:23",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "214",
+            "name": "订单规则配置",
+            "orderNum": 7,
+            "parentId": "98",
+            "parentName": "",
+            "perms": "config:orderRule:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/config/orderRuleConfigList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-05-31 11:32:05",
+            "enable": 0,
+            "icon": "fa fa-map",
+            "id": "191",
+            "name": "mq失败队列管理",
+            "orderNum": 7,
+            "parentId": "121",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-07-10 11:27:21",
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-25 18:55:16",
+            "enable": 0,
+            "icon": "fa fa-adjust",
+            "id": "113",
+            "name": "认证管理",
+            "orderNum": 8,
+            "parentId": "121",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-07-10 11:27:47",
+            "uri": ""
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "icon": "fa fa-cog",
+            "id": "1",
+            "name": "系统管理",
+            "orderNum": 9,
+            "parentId": "120",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-07-10 11:27:42",
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-09-12 10:48:03",
+            "enable": 0,
+            "icon": "fa fa-bell",
+            "id": "234",
+            "name": "数据治理",
+            "orderNum": 10,
+            "parentId": "121",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-09-12 10:56:03",
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-09-27 16:36:34",
+            "enable": 0,
+            "icon": "fa fa-btc",
+            "id": "242",
+            "name": "银行机构管理",
+            "orderNum": 11,
+            "parentId": "121",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2020-05-12 17:31:09",
+            "enable": 0,
+            "icon": "iconfont iconicon_study",
+            "id": "251",
+            "name": "测试菜单",
+            "orderNum": 12,
+            "parentId": "1",
+            "parentName": "",
+            "perms": "a,b,c",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/test"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-07-15 19:21:54",
+            "enable": 0,
+            "icon": "fa fa-comments",
+            "id": "227",
+            "name": "消息中心",
+            "orderNum": 12,
+            "parentId": "121",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-09-27 16:37:10",
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-10-31 15:25:07",
+            "enable": 0,
+            "icon": "fa fa-television",
+            "id": "249",
+            "name": "申请产品管理",
+            "orderNum": 12,
+            "parentId": "0",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": ""
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 0,
+            "icon": "",
+            "id": "0",
+            "name": "一级菜单",
+            "orderNum": 0,
+            "parentId": "-1",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 4,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": ""
+        }
+    ],
+    "iTotalRecords": 52,
+    "iTotalDisplayRecords": 52,
+    "httpCode": 200,
+    "msg": "请求成功",
+    "timestamp": 1590374464026
+}

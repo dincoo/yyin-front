@@ -3,7 +3,7 @@ import { setStore, getStore } from '@/util/store'
 import { isURL, validatenull } from '@/util/validate'
 import { deepClone } from '@/util/util'
 import webiste from '@/config/website'
-import { loginByUsername, getUserInfo, getMenu, getTopMenu, logout, refeshToken, getButtons } from '@/api/user'
+import { loginByUsername, getUserInfo, getMenu, logout, refeshToken, getButtons } from '@/api/user'
 
 
 function addPath(ele, first) {

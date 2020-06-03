@@ -1,0 +1,4108 @@
+{
+    "data": [{
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:46:47",
+            "enable": 0,
+            "icon": "",
+            "id": "88",
+            "name": "订单查询列表",
+            "orderNum": 0,
+            "parentId": "67",
+            "parentName": "订单列表",
+            "perms": "order:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:46:28",
+            "uri": "/order/api/detail"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-21 09:52:10",
+            "enable": 0,
+            "icon": "",
+            "id": "90",
+            "name": "获取产品详情",
+            "orderNum": 0,
+            "parentId": "65",
+            "parentName": "产品列表",
+            "perms": "product:manage:detail",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:27:09",
+            "uri": "/background/getProduct"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:47:50",
+            "enable": 0,
+            "icon": "",
+            "id": "89",
+            "name": "重发订单",
+            "orderNum": 0,
+            "parentId": "67",
+            "parentName": "订单列表",
+            "perms": "order:manage:rebuild",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:46:38",
+            "uri": "/order/api/rebuild"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-28 11:59:40",
+            "enable": 0,
+            "icon": "fa fa-globe",
+            "id": "96",
+            "name": "统计列表",
+            "orderNum": 0,
+            "parentId": "95",
+            "parentName": "订单统计",
+            "perms": "statistics:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:37:44",
+            "uri": "/statistics/statisticsList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-20 11:53:52",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "98",
+            "name": "服务配置管理",
+            "orderNum": 4,
+            "parentId": "121",
+            "parentName": "应用中心",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-07-10 11:27:10",
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-20 11:55:28",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "99",
+            "name": "订单服务配置列表",
+            "orderNum": 0,
+            "parentId": "98",
+            "parentName": "服务配置管理",
+            "perms": "config:orderConfig:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-03-07 18:35:37",
+            "uri": "/config/orderConfigList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-21 14:58:59",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "100",
+            "name": "模型服务配置列表",
+            "orderNum": 2,
+            "parentId": "98",
+            "parentName": "服务配置管理",
+            "perms": "config:modelConfig:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-06-06 15:44:31",
+            "uri": "/config/modelConfigList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-21 15:00:19",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "101",
+            "name": "报文服务配置列表",
+            "orderNum": 5,
+            "parentId": "98",
+            "parentName": "服务配置管理",
+            "perms": "config:reportConfig:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-06-06 15:19:29",
+            "uri": "/config/datagramConfigList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-25 18:56:52",
+            "enable": 0,
+            "icon": "fa fa-adjust",
+            "id": "114",
+            "name": "认证列表",
+            "orderNum": 1,
+            "parentId": "113",
+            "parentName": "认证管理",
+            "perms": "authentication:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/authentication/authentication"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-05-06 10:56:38",
+            "enable": 0,
+            "icon": "",
+            "id": "190",
+            "name": "查询服务反馈配置是否存在",
+            "orderNum": 0,
+            "parentId": "185",
+            "parentName": "服务反馈配置列表",
+            "perms": "feedback:config:isExist",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/feedbackConfigServiceImpl/isExist"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-06 16:25:08",
+            "enable": 0,
+            "icon": "",
+            "id": "213",
+            "name": "校验规则校验服务配置是否存在",
+            "orderNum": 0,
+            "parentId": "106",
+            "parentName": "新增服务配置",
+            "perms": "config:ruleCheckConfig:verifyExists",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/checkModelConfigServiceImpl/verifyExists"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-04 16:41:36",
+            "enable": 0,
+            "icon": "fa fa-address-book-o",
+            "id": "194",
+            "name": "贷后任务列表",
+            "orderNum": 1,
+            "parentId": "62",
+            "parentName": "调度中心",
+            "perms": "schedule:postloanJob:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/schedule/schedulListPostloan"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-19 09:47:36",
+            "enable": 0,
+            "icon": "",
+            "id": "215",
+            "name": "分页查询订单规则配置",
+            "orderNum": 0,
+            "parentId": "214",
+            "parentName": "订单规则配置",
+            "perms": "config:orderRule:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/orderFactorProviderImpl/page"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-19 10:20:23",
+            "enable": 0,
+            "icon": "",
+            "id": "217",
+            "name": "查询规则名称字典",
+            "orderNum": 0,
+            "parentId": "214",
+            "parentName": "订单规则配置",
+            "perms": "config:orderRule:getOrderFactorKV",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/orderFactorProviderImpl/getOrderFactorKV"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-19 10:21:33",
+            "enable": 0,
+            "icon": "",
+            "id": "218",
+            "name": "新增订单规则配置",
+            "orderNum": 0,
+            "parentId": "214",
+            "parentName": "订单规则配置",
+            "perms": "config:orderRule:add",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/orderFactorProviderImpl/add"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-19 10:22:54",
+            "enable": 0,
+            "icon": "",
+            "id": "219",
+            "name": "修改订单规则配置",
+            "orderNum": 0,
+            "parentId": "214",
+            "parentName": "订单规则配置",
+            "perms": "config:orderRule:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/orderFactorProviderImpl/updateById"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-19 10:23:51",
+            "enable": 0,
+            "icon": "",
+            "id": "220",
+            "name": "校验订单规则是否存在",
+            "orderNum": 0,
+            "parentId": "214",
+            "parentName": "订单规则配置",
+            "perms": "config:orderRule:verifyExists",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/orderFactorProviderImpl/verifyExists"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-07-15 19:21:54",
+            "enable": 0,
+            "icon": "fa fa-comments",
+            "id": "227",
+            "name": "消息中心",
+            "orderNum": 12,
+            "parentId": "121",
+            "parentName": "应用中心",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-09-27 16:37:10",
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-07-15 19:28:51",
+            "enable": 0,
+            "icon": "fa fa-comments",
+            "id": "229",
+            "name": "模板管理",
+            "orderNum": 2,
+            "parentId": "227",
+            "parentName": "消息中心",
+            "perms": "message:template:manage",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/template/templateManage"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-07-15 19:30:25",
+            "enable": 0,
+            "icon": "fa fa-comments",
+            "id": "230",
+            "name": "请求参数管理",
+            "orderNum": 3,
+            "parentId": "227",
+            "parentName": "消息中心",
+            "perms": "message:request:manage",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/paramRecord/paramRecordManage"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-09-27 18:08:47",
+            "enable": 0,
+            "icon": "",
+            "id": "245",
+            "name": "增加机构配置",
+            "orderNum": 0,
+            "parentId": "243",
+            "parentName": "银行机构列表",
+            "perms": "bank:org:insert",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/productBankReferenceProvider/insert"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-09-12 16:03:45",
+            "enable": 0,
+            "icon": "",
+            "id": "236",
+            "name": "查看数据治理详情配置",
+            "orderNum": 0,
+            "parentId": "235",
+            "parentName": "数据治理列表",
+            "perms": "data:manage:detail",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/config/queryPro"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-09-12 16:17:59",
+            "enable": 0,
+            "icon": "",
+            "id": "237",
+            "name": "初始化指标配置",
+            "orderNum": 0,
+            "parentId": "235",
+            "parentName": "数据治理列表",
+            "perms": "data:manage:init",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/config/toAddProIndex"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-10-31 15:25:07",
+            "enable": 0,
+            "icon": "fa fa-television",
+            "id": "249",
+            "name": "申请产品管理",
+            "orderNum": 12,
+            "parentId": "0",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-10-31 15:27:04",
+            "enable": 0,
+            "icon": "fa fa-television",
+            "id": "250",
+            "name": "用户申请列表",
+            "orderNum": 0,
+            "parentId": "249",
+            "parentName": "申请产品管理",
+            "perms": "orderInfo:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/orderInfo/orderInfo"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2018-12-29 11:13:26",
+            "enable": 0,
+            "icon": "fa fa-sun-o",
+            "id": "64",
+            "name": "平台产品用户管理",
+            "orderNum": 2,
+            "parentId": "122",
+            "parentName": "运营中心",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-08-14 11:35:30",
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-17 13:51:36",
+            "enable": 0,
+            "icon": "",
+            "id": "70",
+            "name": "产品列表查询",
+            "orderNum": 0,
+            "parentId": "65",
+            "parentName": "产品列表",
+            "perms": "product:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:27:49",
+            "uri": "/background/getProductList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-21 09:54:20",
+            "enable": 0,
+            "icon": "",
+            "id": "91",
+            "name": "获取表单字段",
+            "orderNum": 0,
+            "parentId": "65",
+            "parentName": "产品列表",
+            "perms": "product:fields:list",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:32:00",
+            "uri": "/productFieldMerge/getDatas"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-01 11:23:08",
+            "enable": 0,
+            "icon": "fa fa-sketch",
+            "id": "120",
+            "name": "管理中心",
+            "orderNum": 0,
+            "parentId": "0",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 3,
+            "updateBy": "admin",
+            "updateTime": "2019-04-09 09:54:57",
+            "uri": "/indexPage/manageCenter"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-28 11:57:16",
+            "enable": 0,
+            "icon": "fa fa-globe",
+            "id": "95",
+            "name": "订单统计",
+            "orderNum": 5,
+            "parentId": "121",
+            "parentName": "应用中心",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-03-01 14:18:54",
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-25 15:32:50",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "106",
+            "name": "新增服务配置",
+            "orderNum": 6,
+            "parentId": "98",
+            "parentName": "服务配置管理",
+            "perms": "config:manager:add",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-06-06 15:20:04",
+            "uri": "/config/configAdd"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-27 15:07:44",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "115",
+            "name": "部门管理",
+            "orderNum": 5,
+            "parentId": "1",
+            "parentName": "系统管理",
+            "perms": "sys:dept:list",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/sysManage/department"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-06 15:26:04",
+            "enable": 0,
+            "icon": "",
+            "id": "137",
+            "name": "模型服务配置分页查询",
+            "orderNum": 0,
+            "parentId": "100",
+            "parentName": "模型服务配置列表",
+            "perms": "config:modelConfig:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/modelConfigServiceImpl/selectConfigPage"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-06 15:27:25",
+            "enable": 0,
+            "icon": "",
+            "id": "138",
+            "name": "更新模型服务配置",
+            "orderNum": 0,
+            "parentId": "100",
+            "parentName": "模型服务配置列表",
+            "perms": "config:modelConfig:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/modelConfigServiceImpl/updateConfig"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-06 15:28:52",
+            "enable": 0,
+            "icon": "",
+            "id": "139",
+            "name": "批量删除模型服务配置",
+            "orderNum": 0,
+            "parentId": "100",
+            "parentName": "模型服务配置列表",
+            "perms": "config:modelConfig:delete",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/modelConfigServiceImpl/deleteConfigBatch"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-06 15:34:26",
+            "enable": 0,
+            "icon": "",
+            "id": "140",
+            "name": "根据产品ID查询模型服务模板",
+            "orderNum": 0,
+            "parentId": "100",
+            "parentName": "模型服务配置列表",
+            "perms": "config:modelTemplate:select",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/modelXmlTemplateServiceImpl/selectTemplateByProId"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-06 15:35:43",
+            "enable": 0,
+            "icon": "",
+            "id": "141",
+            "name": "新增模型服务配置模板",
+            "orderNum": 0,
+            "parentId": "100",
+            "parentName": "模型服务配置列表",
+            "perms": "config:modelTemplate:save",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/modelXmlTemplateServiceImpl/insertTemplate"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-06 15:36:53",
+            "enable": 0,
+            "icon": "",
+            "id": "142",
+            "name": "更新模型服务模板",
+            "orderNum": 0,
+            "parentId": "100",
+            "parentName": "模型服务配置列表",
+            "perms": "config:modelTemplate:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-03-06 15:39:02",
+            "uri": "/modelXmlTemplateServiceImpl/updateTemplate"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-06 15:38:28",
+            "enable": 0,
+            "icon": "",
+            "id": "143",
+            "name": "删除模型服务模板",
+            "orderNum": 0,
+            "parentId": "100",
+            "parentName": "模型服务配置列表",
+            "perms": "config:modelTemplate:delete",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/modelXmlTemplateServiceImpl/deleteTemplateByProId"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-07 11:54:07",
+            "enable": 0,
+            "icon": "",
+            "id": "145",
+            "name": "报文服务配置分页查询",
+            "orderNum": 0,
+            "parentId": "101",
+            "parentName": "报文服务配置列表",
+            "perms": "config:reportConfig:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/reportConfigFacade/queryPageList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-07 14:25:58",
+            "enable": 0,
+            "icon": "",
+            "id": "146",
+            "name": "更新报文服务配置",
+            "orderNum": 0,
+            "parentId": "101",
+            "parentName": "报文服务配置列表",
+            "perms": "config:reportConfig:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/reportConfigFacade/update"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-07 14:27:00",
+            "enable": 0,
+            "icon": "",
+            "id": "147",
+            "name": "批量删除报文服务",
+            "orderNum": 0,
+            "parentId": "101",
+            "parentName": "报文服务配置列表",
+            "perms": "config:reportConfig:delete",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/reportConfigFacade/deleteBatchIds"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-07 14:50:19",
+            "enable": 0,
+            "icon": "",
+            "id": "148",
+            "name": "批量新增报文服务配置",
+            "orderNum": 0,
+            "parentId": "106",
+            "parentName": "新增服务配置",
+            "perms": "config:reportConfig:save",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/reportConfigFacade/saveBatch"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-08 10:40:54",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "149",
+            "name": "计费服务配置列表",
+            "orderNum": 4,
+            "parentId": "98",
+            "parentName": "服务配置管理",
+            "perms": "config:chargeConfig:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-03-11 17:06:46",
+            "uri": "/config/chargeConfig"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-08 10:52:36",
+            "enable": 0,
+            "icon": "",
+            "id": "150",
+            "name": "获取pdf服务报文ID",
+            "orderNum": 0,
+            "parentId": "102",
+            "parentName": "PDF服务配置列表",
+            "perms": "config:pdfConfig:getReportId",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/pdfConfigFacade/getReportIds"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-29 17:42:29",
+            "enable": 0,
+            "icon": "",
+            "id": "158",
+            "name": "查询报文服务配置是否存在",
+            "orderNum": 0,
+            "parentId": "106",
+            "parentName": "新增服务配置",
+            "perms": "config:reportConfig:verifyExists",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/reportConfigFacade/verifyExists"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-01 10:58:19",
+            "enable": 0,
+            "icon": "",
+            "id": "159",
+            "name": "批量保存模型服务",
+            "orderNum": 0,
+            "parentId": "106",
+            "parentName": "新增服务配置",
+            "perms": "config:modelConfig:saveBatch",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/modelConfigServiceImpl/insertConfigs"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-01 11:00:51",
+            "enable": 0,
+            "icon": "",
+            "id": "160",
+            "name": "校验订单服务配置是否存在",
+            "orderNum": 0,
+            "parentId": "106",
+            "parentName": "新增服务配置",
+            "perms": "config:orderConfig:verifyExists",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/orderDataLevelConfigServiceImpl/verifyExists"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-01 11:01:49",
+            "enable": 0,
+            "icon": "",
+            "id": "161",
+            "name": "校验模型服务配置是否存在",
+            "orderNum": 0,
+            "parentId": "106",
+            "parentName": "新增服务配置",
+            "perms": "config:modelConfig:verifyExists",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/modelConfigServiceImpl/verifyExists"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-01 11:02:43",
+            "enable": 0,
+            "icon": "",
+            "id": "162",
+            "name": "校验计费服务配置是否存在",
+            "orderNum": 0,
+            "parentId": "106",
+            "parentName": "新增服务配置",
+            "perms": "config:chargeConfig:verifyExists",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/chargeConfigFacade/verifyExists"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-04 15:37:41",
+            "enable": 0,
+            "icon": "",
+            "id": "163",
+            "name": "查询订单统计详细信息",
+            "orderNum": 0,
+            "parentId": "96",
+            "parentName": "统计列表",
+            "perms": "statistics:manage:info",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/orderInfoStatisticsProviderImpl/statistics"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-11 14:42:25",
+            "enable": 0,
+            "icon": "fa fa-rss-square",
+            "id": "166",
+            "name": "反馈流水列表",
+            "orderNum": 0,
+            "parentId": "165",
+            "parentName": "服务反馈管理",
+            "perms": "feedback:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/serviceFeedback/serviceFeedback"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-11 14:46:13",
+            "enable": 0,
+            "icon": "",
+            "id": "168",
+            "name": "上传反馈文件",
+            "orderNum": 0,
+            "parentId": "166",
+            "parentName": "反馈流水列表",
+            "perms": "feedback:file:upload",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-04-26 10:38:17",
+            "uri": "/feedbackUploadProviderImpl/upload"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-11 14:44:46",
+            "enable": 0,
+            "icon": "",
+            "id": "167",
+            "name": "反馈流水记录分页列表查询",
+            "orderNum": 0,
+            "parentId": "166",
+            "parentName": "反馈流水列表",
+            "perms": "feedback:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/feedbackFlowProviderImpl/selectFeedbackFlowByConditionV2"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-11 14:46:57",
+            "enable": 0,
+            "icon": "",
+            "id": "169",
+            "name": "下载反馈文件模板",
+            "orderNum": 0,
+            "parentId": "166",
+            "parentName": "反馈流水列表",
+            "perms": "feedback:template:download",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/fileDownloadProviderImpl/download"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-16 15:53:36",
+            "enable": 0,
+            "icon": "fa fa-cloud",
+            "id": "170",
+            "name": "金融云管理",
+            "orderNum": 3,
+            "parentId": "122",
+            "parentName": "运营中心",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-04-16 16:02:06",
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-16 15:56:10",
+            "enable": 0,
+            "icon": "fa fa-hands-usd",
+            "id": "171",
+            "name": "金融云机构列表",
+            "orderNum": 0,
+            "parentId": "170",
+            "parentName": "金融云管理",
+            "perms": "financeCloud:org:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/financeCloud/orgList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-16 16:48:12",
+            "enable": 0,
+            "icon": "",
+            "id": "173",
+            "name": "获取推送数据类型",
+            "orderNum": 0,
+            "parentId": "171",
+            "parentName": "金融云机构列表",
+            "perms": "financeCloud:org:getPushDataTypes",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/org/api/getPushDataTypes"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-16 17:35:35",
+            "enable": 0,
+            "icon": "",
+            "id": "174",
+            "name": "获取公私钥信息",
+            "orderNum": 0,
+            "parentId": "171",
+            "parentName": "金融云机构列表",
+            "perms": "3",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/org/api/getKeys"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-16 18:06:52",
+            "enable": 0,
+            "icon": "",
+            "id": "175",
+            "name": "新增金融云机构信息",
+            "orderNum": 0,
+            "parentId": "171",
+            "parentName": "金融云机构列表",
+            "perms": "financeCloud:org:save",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/org/api/save"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-16 18:08:08",
+            "enable": 0,
+            "icon": "",
+            "id": "176",
+            "name": "修改金融云机构信息",
+            "orderNum": 0,
+            "parentId": "171",
+            "parentName": "金融云机构列表",
+            "perms": "financeCloud:org:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-04-16 18:27:10",
+            "uri": "/org/api/update"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-16 18:59:45",
+            "enable": 0,
+            "icon": "",
+            "id": "177",
+            "name": "删除金融云机构信息",
+            "orderNum": 0,
+            "parentId": "171",
+            "parentName": "金融云机构列表",
+            "perms": "financeCloud:org:delete",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/org/api/delete"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-30 13:58:38",
+            "enable": 0,
+            "icon": "",
+            "id": "183",
+            "name": "更新贷后发送条数",
+            "orderNum": 0,
+            "parentId": "194",
+            "parentName": "贷后任务列表",
+            "perms": "schedule:config:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-06-04 16:44:01",
+            "uri": "/schedule/mq/task/config/update"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-30 14:00:58",
+            "enable": 0,
+            "icon": "",
+            "id": "184",
+            "name": "复制贷后清单",
+            "orderNum": 0,
+            "parentId": "194",
+            "parentName": "贷后任务列表",
+            "perms": "schedule:postloanlist:copy",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-06-04 16:43:35",
+            "uri": "/callProcedureServiceImpl/callProcedure"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-18 19:37:23",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "214",
+            "name": "订单规则配置",
+            "orderNum": 7,
+            "parentId": "98",
+            "parentName": "服务配置管理",
+            "perms": "config:orderRule:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/config/orderRuleConfigList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-19 09:57:52",
+            "enable": 0,
+            "icon": "",
+            "id": "216",
+            "name": "批量删除订单规则配置",
+            "orderNum": 0,
+            "parentId": "214",
+            "parentName": "订单规则配置",
+            "perms": "config:orderRule:deleteBatch",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/orderFactorProviderImpl/deleteByIdBatch"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-07-15 19:27:12",
+            "enable": 0,
+            "icon": "fa fa-comments",
+            "id": "228",
+            "name": "场景管理",
+            "orderNum": 1,
+            "parentId": "227",
+            "parentName": "消息中心",
+            "perms": "message:situation:manage",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/situation/situationManage"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-07-15 19:31:59",
+            "enable": 0,
+            "icon": "fa fa-comments",
+            "id": "231",
+            "name": "消息结果管理",
+            "orderNum": 4,
+            "parentId": "227",
+            "parentName": "消息中心",
+            "perms": "message:result:manage",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/sendingResult/sendingResultManage"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-08-16 14:10:55",
+            "enable": 0,
+            "icon": "",
+            "id": "233",
+            "name": "删除企业用户",
+            "orderNum": 0,
+            "parentId": "232",
+            "parentName": "企业用户管理",
+            "perms": "product:userCompany:delete",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-08-16 14:11:22",
+            "uri": "/background/removeUserCompany"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-09-19 11:42:45",
+            "enable": 0,
+            "icon": "",
+            "id": "240",
+            "name": "判断数据治理配置是否存在",
+            "orderNum": 0,
+            "parentId": "235",
+            "parentName": "数据治理列表",
+            "perms": "data:manage:isExist",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/config/getProIdList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-09-19 11:43:33",
+            "enable": 0,
+            "icon": "",
+            "id": "241",
+            "name": "删除服务治理配置",
+            "orderNum": 0,
+            "parentId": "235",
+            "parentName": "数据治理列表",
+            "perms": "data:manage:delete",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/config/delProConfig"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-09-27 18:09:34",
+            "enable": 0,
+            "icon": "",
+            "id": "246",
+            "name": "修改银行机构配置",
+            "orderNum": 0,
+            "parentId": "243",
+            "parentName": "银行机构列表",
+            "perms": "bank:org:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/productBankReferenceProvider/updateById"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-09-27 18:10:29",
+            "enable": 0,
+            "icon": "",
+            "id": "247",
+            "name": "删除银行机构配置",
+            "orderNum": 0,
+            "parentId": "243",
+            "parentName": "银行机构列表",
+            "perms": "bank:org:delete",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/productBankReferenceProvider/deleteById"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-09-27 18:11:21",
+            "enable": 0,
+            "icon": "",
+            "id": "248",
+            "name": "校验银行机构配置是否存在",
+            "orderNum": 0,
+            "parentId": "243",
+            "parentName": "银行机构列表",
+            "perms": "bank:org:exists",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/productBankReferenceProvider/verifyExists"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-17 10:54:19",
+            "enable": 0,
+            "icon": "",
+            "id": "69",
+            "name": "调度任务列表查询",
+            "orderNum": 0,
+            "parentId": "63",
+            "parentName": "贷前任务列表",
+            "perms": "schedule:job:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:38:21",
+            "uri": "/schedule/job/list"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2018-12-25 18:11:32",
+            "enable": 0,
+            "icon": "fa fa-address-book-o",
+            "id": "62",
+            "name": "调度中心",
+            "orderNum": 1,
+            "parentId": "121",
+            "parentName": "应用中心",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-03-01 14:19:04",
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2018-12-25 18:15:27",
+            "enable": 0,
+            "icon": "fa fa-address-book-o",
+            "id": "63",
+            "name": "贷前任务列表",
+            "orderNum": 0,
+            "parentId": "62",
+            "parentName": "调度中心",
+            "perms": "schedule:preloanJob:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-06-04 16:45:37",
+            "uri": "/schedule/schedulListPreloan"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2018-06-15 16:32:32",
+            "enable": 0,
+            "icon": "",
+            "id": "61",
+            "name": "重置密码",
+            "orderNum": 0,
+            "parentId": "2",
+            "parentName": "管理员管理",
+            "perms": "sys:user:resetPwd",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": ""
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "icon": "fa fa-cog",
+            "id": "1",
+            "name": "系统管理",
+            "orderNum": 9,
+            "parentId": "120",
+            "parentName": "管理中心",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-07-10 11:27:42",
+            "uri": ""
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "icon": "fa fa-user",
+            "id": "2",
+            "name": "管理员管理",
+            "orderNum": 1,
+            "parentId": "1",
+            "parentName": "系统管理",
+            "perms": "sys:user:list",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/sysManage/user"
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "icon": "fa fa-user-secret",
+            "id": "3",
+            "name": "角色管理",
+            "orderNum": 2,
+            "parentId": "1",
+            "parentName": "系统管理",
+            "perms": "sys:role:list",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/sysManage/role"
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "icon": "fa fa-th-list",
+            "id": "4",
+            "name": "菜单管理",
+            "orderNum": 3,
+            "parentId": "1",
+            "parentName": "系统管理",
+            "perms": "sys:menu:list",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/sysManage/menu"
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "icon": "",
+            "id": "15",
+            "name": "查看",
+            "orderNum": 0,
+            "parentId": "2",
+            "parentName": "管理员管理",
+            "perms": "sys:user:list,sys:user:info,sys:role:select",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": ""
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "icon": "",
+            "id": "16",
+            "name": "新增",
+            "orderNum": 0,
+            "parentId": "2",
+            "parentName": "管理员管理",
+            "perms": "sys:user:save",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": ""
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "icon": "",
+            "id": "17",
+            "name": "修改",
+            "orderNum": 0,
+            "parentId": "2",
+            "parentName": "管理员管理",
+            "perms": "sys:user:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": ""
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "icon": "",
+            "id": "18",
+            "name": "删除",
+            "orderNum": 0,
+            "parentId": "2",
+            "parentName": "管理员管理",
+            "perms": "sys:user:delete",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": ""
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "icon": "",
+            "id": "19",
+            "name": "查看",
+            "orderNum": 0,
+            "parentId": "3",
+            "parentName": "角色管理",
+            "perms": "sys:role:list,sys:role:info",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": ""
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "icon": "",
+            "id": "20",
+            "name": "新增",
+            "orderNum": 0,
+            "parentId": "3",
+            "parentName": "角色管理",
+            "perms": "sys:role:save,sys:menu:perms",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": ""
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "icon": "",
+            "id": "21",
+            "name": "修改",
+            "orderNum": 0,
+            "parentId": "3",
+            "parentName": "角色管理",
+            "perms": "sys:role:update,sys:menu:perms",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": ""
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "icon": "",
+            "id": "22",
+            "name": "删除",
+            "orderNum": 0,
+            "parentId": "3",
+            "parentName": "角色管理",
+            "perms": "sys:role:delete",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": ""
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "icon": "",
+            "id": "23",
+            "name": "查看",
+            "orderNum": 0,
+            "parentId": "4",
+            "parentName": "菜单管理",
+            "perms": "sys:menu:list,sys:menu:info,sys:menu:select",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": ""
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "icon": "",
+            "id": "24",
+            "name": "新增",
+            "orderNum": 0,
+            "parentId": "4",
+            "parentName": "菜单管理",
+            "perms": "sys:menu:save,sys:menu:select",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": ""
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "icon": "",
+            "id": "25",
+            "name": "修改",
+            "orderNum": 0,
+            "parentId": "4",
+            "parentName": "菜单管理",
+            "perms": "sys:menu:update,sys:menu:select",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": ""
+        },
+        {
+            "createBy": "",
+            "createTime": null,
+            "enable": 1,
+            "icon": "",
+            "id": "26",
+            "name": "删除",
+            "orderNum": 0,
+            "parentId": "4",
+            "parentName": "菜单管理",
+            "perms": "sys:menu:delete",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-17 10:25:00",
+            "enable": 0,
+            "icon": "",
+            "id": "68",
+            "name": "产品编辑",
+            "orderNum": 0,
+            "parentId": "65",
+            "parentName": "产品列表",
+            "perms": "product:manage:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:32:15",
+            "uri": "/background/updateProduct"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-21 15:02:34",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "102",
+            "name": "PDF服务配置列表",
+            "orderNum": 3,
+            "parentId": "98",
+            "parentName": "服务配置管理",
+            "perms": "config:pdfConfig:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-06-06 15:18:37",
+            "uri": "/config/pdfConfigList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-25 18:55:16",
+            "enable": 0,
+            "icon": "fa fa-adjust",
+            "id": "113",
+            "name": "认证管理",
+            "orderNum": 8,
+            "parentId": "121",
+            "parentName": "应用中心",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-07-10 11:27:47",
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-27 15:29:42",
+            "enable": 0,
+            "icon": "",
+            "id": "116",
+            "name": "查看",
+            "orderNum": 0,
+            "parentId": "115",
+            "parentName": "部门管理",
+            "perms": "sys:dept:list,sys:dept:info,sys:dept:select",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/sys/dept/list"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-27 15:30:36",
+            "enable": 0,
+            "icon": "",
+            "id": "117",
+            "name": "新增",
+            "orderNum": 0,
+            "parentId": "115",
+            "parentName": "部门管理",
+            "perms": "sys:dept:save",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/sys/dept/save"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-27 15:31:27",
+            "enable": 0,
+            "icon": "",
+            "id": "118",
+            "name": "修改",
+            "orderNum": 0,
+            "parentId": "115",
+            "parentName": "部门管理",
+            "perms": "sys:dept:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/sys/dept/update"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-05-31 11:34:56",
+            "enable": 0,
+            "icon": "fa fa-map",
+            "id": "192",
+            "name": "mq失败队列列表",
+            "orderNum": 0,
+            "parentId": "191",
+            "parentName": "mq失败队列管理",
+            "perms": "mqErrorQueue:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/mqErrorQueue/mqErrorQueue"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-11 14:40:29",
+            "enable": 0,
+            "icon": "fa fa-rss-square",
+            "id": "165",
+            "name": "服务反馈管理",
+            "orderNum": 6,
+            "parentId": "121",
+            "parentName": "应用中心",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-05-31 11:32:05",
+            "enable": 0,
+            "icon": "fa fa-map",
+            "id": "191",
+            "name": "mq失败队列管理",
+            "orderNum": 7,
+            "parentId": "121",
+            "parentName": "应用中心",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-07-10 11:27:21",
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-05-31 11:36:02",
+            "enable": 0,
+            "icon": "",
+            "id": "193",
+            "name": "分页查询mq失败队列",
+            "orderNum": 0,
+            "parentId": "192",
+            "parentName": "mq失败队列列表",
+            "perms": "mqErrorQueue:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-05-31 11:44:07",
+            "uri": "/mqExceRecordFacade/queryPageList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-06 16:21:32",
+            "enable": 0,
+            "icon": "",
+            "id": "212",
+            "name": "新增规则校验服务配置",
+            "orderNum": 0,
+            "parentId": "106",
+            "parentName": "新增服务配置",
+            "perms": "config:ruleCheckConfig:insertBatch",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-06-06 16:22:35",
+            "uri": "/checkModelConfigServiceImpl/insertConfigs"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-09-12 10:52:55",
+            "enable": 0,
+            "icon": "fa fa-bell",
+            "id": "235",
+            "name": "数据治理列表",
+            "orderNum": 0,
+            "parentId": "234",
+            "parentName": "数据治理",
+            "perms": "data:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/dataManage/dataManage"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-09-12 10:48:03",
+            "enable": 0,
+            "icon": "fa fa-bell",
+            "id": "234",
+            "name": "数据治理",
+            "orderNum": 10,
+            "parentId": "121",
+            "parentName": "应用中心",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-09-12 10:56:03",
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-09-16 10:50:34",
+            "enable": 0,
+            "icon": "",
+            "id": "238",
+            "name": "增加数据治理配置",
+            "orderNum": 0,
+            "parentId": "235",
+            "parentName": "数据治理列表",
+            "perms": "data:manage:add",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/config/addProConfig"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-09-16 10:54:29",
+            "enable": 0,
+            "icon": "",
+            "id": "239",
+            "name": "数据治理分页查询",
+            "orderNum": 0,
+            "parentId": "235",
+            "parentName": "数据治理列表",
+            "perms": "data:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/config/queryProId"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-17 13:58:20",
+            "enable": 0,
+            "icon": "",
+            "id": "71",
+            "name": "产品列表站点初始化",
+            "orderNum": 0,
+            "parentId": "65",
+            "parentName": "产品列表",
+            "perms": "product:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:33:01",
+            "uri": "/background/getSiteList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2018-12-29 11:16:37",
+            "enable": 0,
+            "icon": "fa fa-sun",
+            "id": "65",
+            "name": "产品列表",
+            "orderNum": 1,
+            "parentId": "64",
+            "parentName": "平台产品用户管理",
+            "perms": "product:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-02-28 10:25:19",
+            "uri": "/product/productList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:10:09",
+            "enable": 0,
+            "icon": "",
+            "id": "73",
+            "name": "更新产品站点信息",
+            "orderNum": 0,
+            "parentId": "65",
+            "parentName": "产品列表",
+            "perms": "product:site:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:33:21",
+            "uri": "/background/updateProductSite"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:08:45",
+            "enable": 0,
+            "icon": "",
+            "id": "72",
+            "name": "查询产品站点信息",
+            "orderNum": 0,
+            "parentId": "65",
+            "parentName": "产品列表",
+            "perms": "product:site:list",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:33:37",
+            "uri": "/background/getProductSite"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:12:04",
+            "enable": 0,
+            "icon": "",
+            "id": "74",
+            "name": "生成页面",
+            "orderNum": 0,
+            "parentId": "65",
+            "parentName": "产品列表",
+            "perms": "product:fields:generate",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:34:27",
+            "uri": "/autoFtl/all"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:13:24",
+            "enable": 0,
+            "icon": "",
+            "id": "75",
+            "name": "新增产品",
+            "orderNum": 0,
+            "parentId": "65",
+            "parentName": "产品列表",
+            "perms": "product:manage:add",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:39:34",
+            "uri": "/background/insertProduct"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:15:01",
+            "enable": 0,
+            "icon": "",
+            "id": "76",
+            "name": "上传pc图片",
+            "orderNum": 0,
+            "parentId": "65",
+            "parentName": "产品列表",
+            "perms": "product:image:upload",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:35:40",
+            "uri": "/background/upload/img"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:18:55",
+            "enable": 0,
+            "icon": "",
+            "id": "77",
+            "name": "上传h5图片",
+            "orderNum": 0,
+            "parentId": "65",
+            "parentName": "产品列表",
+            "perms": "product:image:upload",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:35:57",
+            "uri": "/autoFtl/upload/img"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:30:11",
+            "enable": 0,
+            "icon": "",
+            "id": "78",
+            "name": "新增任务",
+            "orderNum": 0,
+            "parentId": "63",
+            "parentName": "贷前任务列表",
+            "perms": "schedule:job:add",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:40:28",
+            "uri": "/schedule/job/add"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:31:16",
+            "enable": 0,
+            "icon": "",
+            "id": "79",
+            "name": "删除任务",
+            "orderNum": 0,
+            "parentId": "63",
+            "parentName": "贷前任务列表",
+            "perms": "schedule:job:delete",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:40:47",
+            "uri": "/schedule/job/delete"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:32:20",
+            "enable": 0,
+            "icon": "",
+            "id": "80",
+            "name": "运行任务",
+            "orderNum": 0,
+            "parentId": "63",
+            "parentName": "贷前任务列表",
+            "perms": "schedule:job:run",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-18 18:40:49",
+            "uri": "/schedule/job/run"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:33:11",
+            "enable": 0,
+            "icon": "",
+            "id": "81",
+            "name": "暂停任务",
+            "orderNum": 0,
+            "parentId": "63",
+            "parentName": "贷前任务列表",
+            "perms": "schedule:job:pause",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/schedule/job/pause"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:34:01",
+            "enable": 0,
+            "icon": "",
+            "id": "82",
+            "name": "恢复任务",
+            "orderNum": 0,
+            "parentId": "63",
+            "parentName": "贷前任务列表",
+            "perms": "schedule:job:resume",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/schedule/job/resume"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:37:06",
+            "enable": 0,
+            "icon": "",
+            "id": "83",
+            "name": "更新任务",
+            "orderNum": 0,
+            "parentId": "63",
+            "parentName": "贷前任务列表",
+            "perms": "schedule:job:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/schedule/job/update"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:38:09",
+            "enable": 0,
+            "icon": "",
+            "id": "84",
+            "name": "统计总任务数",
+            "orderNum": 0,
+            "parentId": "63",
+            "parentName": "贷前任务列表",
+            "perms": "schedule:job:total",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:44:23",
+            "uri": "/schedule/job/count/total"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:38:49",
+            "enable": 0,
+            "icon": "",
+            "id": "85",
+            "name": "统计运行中任务数",
+            "orderNum": 0,
+            "parentId": "63",
+            "parentName": "贷前任务列表",
+            "perms": "schedule:job:runningCount",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:45:13",
+            "uri": "/schedule/job/count/run"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:39:49",
+            "enable": 0,
+            "icon": "",
+            "id": "86",
+            "name": "统计暂停任务数",
+            "orderNum": 0,
+            "parentId": "63",
+            "parentName": "贷前任务列表",
+            "perms": "schedule:job:pauseCount",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:45:48",
+            "uri": "/schedule/job/count/pause"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:43:56",
+            "enable": 0,
+            "icon": "",
+            "id": "87",
+            "name": "查询日志列表",
+            "orderNum": 0,
+            "parentId": "63",
+            "parentName": "贷前任务列表",
+            "perms": "schedule:log:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:23:34",
+            "uri": "/schedule/log/list"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-28 14:55:08",
+            "enable": 0,
+            "icon": "",
+            "id": "97",
+            "name": "订单统计列表",
+            "orderNum": 0,
+            "parentId": "96",
+            "parentName": "统计列表",
+            "perms": "statistics:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-03-06 14:55:27",
+            "uri": "/orderInfoStatisticsProviderImpl/statisticsByCondition"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-22 13:49:48",
+            "enable": 0,
+            "icon": "",
+            "id": "103",
+            "name": "PDF配置分页列表",
+            "orderNum": 0,
+            "parentId": "102",
+            "parentName": "PDF服务配置列表",
+            "perms": "config:pdfConfig:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-03-07 14:58:13",
+            "uri": "/pdfConfigFacade/queryPageList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-22 16:35:36",
+            "enable": 0,
+            "icon": "",
+            "id": "104",
+            "name": "更新PDF配置",
+            "orderNum": 0,
+            "parentId": "102",
+            "parentName": "PDF服务配置列表",
+            "perms": "config:pdfConfig:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-03-07 14:58:30",
+            "uri": "/pdfConfigFacade/update"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-22 18:13:01",
+            "enable": 0,
+            "icon": "",
+            "id": "105",
+            "name": "批量删除PDF服务配置",
+            "orderNum": 0,
+            "parentId": "102",
+            "parentName": "PDF服务配置列表",
+            "perms": "config:pdfConfig:delete",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-03-07 14:59:08",
+            "uri": "/pdfConfigFacade/deleteBatchIds"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-25 16:16:54",
+            "enable": 0,
+            "icon": "",
+            "id": "111",
+            "name": "参数列表",
+            "orderNum": 0,
+            "parentId": "107",
+            "parentName": "参数管理",
+            "perms": "sys:parameter:list",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-02-25 16:20:50",
+            "uri": "/sys/parameter/list"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-25 17:47:33",
+            "enable": 0,
+            "icon": "",
+            "id": "112",
+            "name": "新增PDF服务配置",
+            "orderNum": 0,
+            "parentId": "106",
+            "parentName": "新增服务配置",
+            "perms": "config:pdfConfig:save",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-03-07 14:58:48",
+            "uri": "/pdfConfigFacade/saveBatch"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-27 15:32:38",
+            "enable": 0,
+            "icon": "",
+            "id": "119",
+            "name": "删除",
+            "orderNum": 0,
+            "parentId": "115",
+            "parentName": "部门管理",
+            "perms": "sys:dept:delete",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/sys/dept/delete"
+        },
+        {
+            "createBy": "superAdmin",
+            "createTime": "2019-03-04 10:52:54",
+            "enable": 0,
+            "icon": "",
+            "id": "124",
+            "name": "新增认证产品",
+            "orderNum": 0,
+            "parentId": "114",
+            "parentName": "认证列表",
+            "perms": "cert:customer:add",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/cert/customer/insertCustomer"
+        },
+        {
+            "createBy": "superAdmin",
+            "createTime": "2019-03-04 14:19:09",
+            "enable": 0,
+            "icon": "",
+            "id": "127",
+            "name": "生成模拟地址",
+            "orderNum": 0,
+            "parentId": "114",
+            "parentName": "认证列表",
+            "perms": "cert:url:creat",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/cert/customer/creatUrl"
+        },
+        {
+            "createBy": "superAdmin",
+            "createTime": "2019-03-04 14:20:03",
+            "enable": 0,
+            "icon": "",
+            "id": "128",
+            "name": "更新认证地区",
+            "orderNum": 0,
+            "parentId": "114",
+            "parentName": "认证列表",
+            "perms": "cert:area:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/cert/customer/updateCustomerArea"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-05 16:38:01",
+            "enable": 0,
+            "icon": "",
+            "id": "129",
+            "name": "订单服务配置分页查询",
+            "orderNum": 0,
+            "parentId": "99",
+            "parentName": "订单服务配置列表",
+            "perms": "config:orderConfig:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-03-06 14:56:29",
+            "uri": "/orderDataLevelConfigServiceImpl/selectConfigPage"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-05 16:39:26",
+            "enable": 0,
+            "icon": "",
+            "id": "130",
+            "name": "更新订单服务配置",
+            "orderNum": 0,
+            "parentId": "99",
+            "parentName": "订单服务配置列表",
+            "perms": "config:orderConfig:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-03-06 14:56:45",
+            "uri": "/orderDataLevelConfigServiceImpl/updateConfig"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-05 18:04:24",
+            "enable": 0,
+            "icon": "",
+            "id": "132",
+            "name": "批量删除订单服务配置",
+            "orderNum": 0,
+            "parentId": "99",
+            "parentName": "订单服务配置列表",
+            "perms": "config:orderConfig:delete",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-03-06 14:56:56",
+            "uri": "/orderDataLevelConfigServiceImpl/deleteConfigBatch"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-05 18:20:51",
+            "enable": 0,
+            "icon": "",
+            "id": "133",
+            "name": "根据产品ID查询订单模板",
+            "orderNum": 0,
+            "parentId": "99",
+            "parentName": "订单服务配置列表",
+            "perms": "config:orderTemplate:select",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-03-06 14:57:44",
+            "uri": "/orderXmlTemplateServiceImpl/selectTemplateByProId"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-05 18:52:59",
+            "enable": 0,
+            "icon": "",
+            "id": "134",
+            "name": "新增订单服务模板",
+            "orderNum": 0,
+            "parentId": "99",
+            "parentName": "订单服务配置列表",
+            "perms": "config:orderTemplate:save",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-03-06 14:58:52",
+            "uri": "/orderXmlTemplateServiceImpl/insertTemplate"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-05 18:53:56",
+            "enable": 0,
+            "icon": "",
+            "id": "135",
+            "name": "修改订单服务模板",
+            "orderNum": 0,
+            "parentId": "99",
+            "parentName": "订单服务配置列表",
+            "perms": "config:orderTemplate:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-03-06 14:58:36",
+            "uri": "/orderXmlTemplateServiceImpl/updateTemplate"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-11 16:58:52",
+            "enable": 0,
+            "icon": "",
+            "id": "153",
+            "name": "修改计费服务配置",
+            "orderNum": 0,
+            "parentId": "149",
+            "parentName": "计费服务配置列表",
+            "perms": "config:chargeConfig:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/chargeConfigFacade/update"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-11 17:00:30",
+            "enable": 0,
+            "icon": "",
+            "id": "154",
+            "name": "分页查询计费服务配置",
+            "orderNum": 0,
+            "parentId": "149",
+            "parentName": "计费服务配置列表",
+            "perms": "config:chargeConfig:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/chargeConfigFacade/queryPageList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-16 16:03:53",
+            "enable": 0,
+            "icon": "",
+            "id": "172",
+            "name": "分页查询金融云机构列表",
+            "orderNum": 0,
+            "parentId": "171",
+            "parentName": "金融云机构列表",
+            "perms": "financeCloud:org:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/org/api/query"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-11 17:02:56",
+            "enable": 0,
+            "icon": "",
+            "id": "156",
+            "name": "批量新增计费服务配置",
+            "orderNum": 0,
+            "parentId": "106",
+            "parentName": "新增服务配置",
+            "perms": "config:chargeConfig:save",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-03-11 17:03:55",
+            "uri": "/chargeConfigFacade/saveBatch"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-08 16:37:46",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "164",
+            "name": "日志管理",
+            "orderNum": 6,
+            "parentId": "1",
+            "parentName": "系统管理",
+            "perms": "sys:log:list",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-04-08 16:41:19",
+            "uri": "/sysManage/log"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-17 18:35:09",
+            "enable": 0,
+            "icon": "",
+            "id": "178",
+            "name": "下载zip文件",
+            "orderNum": 0,
+            "parentId": "171",
+            "parentName": "金融云机构列表",
+            "perms": "financeCloud:ord:downloadZip",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/org/api/downloadZip"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-10 18:59:50",
+            "enable": 0,
+            "icon": "",
+            "id": "155",
+            "name": "批量删除计费服务配置",
+            "orderNum": 0,
+            "parentId": "149",
+            "parentName": "计费服务配置列表",
+            "perms": "config:chargeConfig:delete",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/chargeConfigFacade/deleteBatchIds"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-22 15:30:35",
+            "enable": 0,
+            "icon": "",
+            "id": "179",
+            "name": "校验产品是否存在",
+            "orderNum": 0,
+            "parentId": "171",
+            "parentName": "金融云机构列表",
+            "perms": "financeCloud:org:isExists",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/org/api/validOrgIsUnique"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-23 11:27:12",
+            "enable": 0,
+            "icon": "",
+            "id": "180",
+            "name": "上传订单模板",
+            "orderNum": 0,
+            "parentId": "67",
+            "parentName": "订单列表",
+            "perms": "order:manage:upload",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/fileUploadProviderImpl/upload"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-23 11:28:10",
+            "enable": 0,
+            "icon": "",
+            "id": "181",
+            "name": "下载订单模板",
+            "orderNum": 0,
+            "parentId": "67",
+            "parentName": "订单列表",
+            "perms": "order:manage:download",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/fileDownloadProviderImpl/download"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-30 11:43:09",
+            "enable": 0,
+            "icon": "",
+            "id": "182",
+            "name": "查询贷后发送条数",
+            "orderNum": 0,
+            "parentId": "194",
+            "parentName": "贷后任务列表",
+            "perms": "schedule:config:get",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-06-04 16:58:35",
+            "uri": "/schedule/mq/task/config/get"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-17 10:54:19",
+            "enable": 0,
+            "icon": "",
+            "id": "195",
+            "name": "调度任务列表查询",
+            "orderNum": 0,
+            "parentId": "194",
+            "parentName": "贷后任务列表",
+            "perms": "schedule:job:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:38:21",
+            "uri": "/schedule/job/list"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:30:11",
+            "enable": 0,
+            "icon": "",
+            "id": "196",
+            "name": "新增任务",
+            "orderNum": 0,
+            "parentId": "194",
+            "parentName": "贷后任务列表",
+            "perms": "schedule:job:add",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:40:28",
+            "uri": "/schedule/job/add"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:31:16",
+            "enable": 0,
+            "icon": "",
+            "id": "197",
+            "name": "删除任务",
+            "orderNum": 0,
+            "parentId": "194",
+            "parentName": "贷后任务列表",
+            "perms": "schedule:job:delete",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:40:47",
+            "uri": "/schedule/job/delete"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:32:20",
+            "enable": 0,
+            "icon": "",
+            "id": "198",
+            "name": "运行任务",
+            "orderNum": 0,
+            "parentId": "194",
+            "parentName": "贷后任务列表",
+            "perms": "schedule:job:run",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-18 18:40:49",
+            "uri": "/schedule/job/run"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:33:11",
+            "enable": 0,
+            "icon": "",
+            "id": "199",
+            "name": "暂停任务",
+            "orderNum": 0,
+            "parentId": "194",
+            "parentName": "贷后任务列表",
+            "perms": "schedule:job:pause",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/schedule/job/pause"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:34:01",
+            "enable": 0,
+            "icon": "",
+            "id": "200",
+            "name": "恢复任务",
+            "orderNum": 0,
+            "parentId": "194",
+            "parentName": "贷后任务列表",
+            "perms": "schedule:job:resume",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/schedule/job/resume"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:37:06",
+            "enable": 0,
+            "icon": "",
+            "id": "201",
+            "name": "更新任务",
+            "orderNum": 0,
+            "parentId": "194",
+            "parentName": "贷后任务列表",
+            "perms": "schedule:job:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/schedule/job/update"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:38:09",
+            "enable": 0,
+            "icon": "",
+            "id": "202",
+            "name": "统计总任务数",
+            "orderNum": 0,
+            "parentId": "194",
+            "parentName": "贷后任务列表",
+            "perms": "schedule:job:total",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:44:23",
+            "uri": "/schedule/job/count/total"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:38:49",
+            "enable": 0,
+            "icon": "",
+            "id": "203",
+            "name": "统计运行中任务数",
+            "orderNum": 0,
+            "parentId": "194",
+            "parentName": "贷后任务列表",
+            "perms": "schedule:job:runningCount",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:45:13",
+            "uri": "/schedule/job/count/run"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:39:49",
+            "enable": 0,
+            "icon": "",
+            "id": "204",
+            "name": "统计暂停任务数",
+            "orderNum": 0,
+            "parentId": "194",
+            "parentName": "贷后任务列表",
+            "perms": "schedule:job:pauseCount",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:45:48",
+            "uri": "/schedule/job/count/pause"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-18 18:43:56",
+            "enable": 0,
+            "icon": "",
+            "id": "205",
+            "name": "查询日志列表",
+            "orderNum": 0,
+            "parentId": "194",
+            "parentName": "贷后任务列表",
+            "perms": "schedule:log:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:23:34",
+            "uri": "/schedule/log/list"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-04 18:23:05",
+            "enable": 0,
+            "icon": "",
+            "id": "206",
+            "name": "批量删除mq异常消息",
+            "orderNum": 0,
+            "parentId": "192",
+            "parentName": "mq失败队列列表",
+            "perms": "mqErrorQueue:manage:deleteBatch",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/mqExceRecordFacade/deleteBatchIds"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-04 18:24:08",
+            "enable": 0,
+            "icon": "",
+            "id": "207",
+            "name": "重复消息",
+            "orderNum": 0,
+            "parentId": "192",
+            "parentName": "mq失败队列列表",
+            "perms": "mqErrorQueue:manage:resend",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/mqExceRecordFacade/reSendToMq"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-19 15:48:10",
+            "enable": 0,
+            "icon": "fa fa-rss-square",
+            "id": "221",
+            "name": "反馈模板配置列表",
+            "orderNum": 3,
+            "parentId": "165",
+            "parentName": "服务反馈管理",
+            "perms": "feedback:templateConfig:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/serviceFeedback/feedBackTemplateConfig"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-08-14 11:39:16",
+            "enable": 0,
+            "icon": "fa fa-sun-o",
+            "id": "232",
+            "name": "企业用户管理",
+            "orderNum": 2,
+            "parentId": "64",
+            "parentName": "平台产品用户管理",
+            "perms": "product:userCompany:config",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-08-16 14:12:31",
+            "uri": "/product/userCompany"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-09-27 16:36:34",
+            "enable": 0,
+            "icon": "fa fa-btc",
+            "id": "242",
+            "name": "银行机构管理",
+            "orderNum": 11,
+            "parentId": "121",
+            "parentName": "应用中心",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-09 18:19:34",
+            "enable": 0,
+            "icon": "fa fa-list-alt",
+            "id": "66",
+            "name": "订单管理",
+            "orderNum": 0,
+            "parentId": "122",
+            "parentName": "运营中心",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 0,
+            "updateBy": "admin",
+            "updateTime": "2019-03-01 14:19:44",
+            "uri": ""
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-25 16:11:19",
+            "enable": 0,
+            "icon": "",
+            "id": "109",
+            "name": "删除参数",
+            "orderNum": 0,
+            "parentId": "107",
+            "parentName": "参数管理",
+            "perms": "sys:parameter:delete",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/sys/parameter/delete"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-09 18:20:33",
+            "enable": 0,
+            "icon": "fa fa-list",
+            "id": "67",
+            "name": "订单列表",
+            "orderNum": 0,
+            "parentId": "66",
+            "parentName": "订单管理",
+            "perms": "order:manage:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 14:50:19",
+            "uri": "/order/orderList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-01-24 16:44:13",
+            "enable": 0,
+            "icon": "",
+            "id": "94",
+            "name": "查询产品是否存在",
+            "orderNum": 0,
+            "parentId": "65",
+            "parentName": "产品列表",
+            "perms": "product:manage:select",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-01-29 15:37:03",
+            "uri": "/background/isExistProduct"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-25 16:08:11",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "107",
+            "name": "参数管理",
+            "orderNum": 7,
+            "parentId": "1",
+            "parentName": "系统管理",
+            "perms": "parameter:manage:list",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-02-25 16:20:37",
+            "uri": "/sysManage/parameter"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-25 16:10:31",
+            "enable": 0,
+            "icon": "",
+            "id": "108",
+            "name": "新增参数",
+            "orderNum": 0,
+            "parentId": "107",
+            "parentName": "参数管理",
+            "perms": "sys:parameter:save",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/sys/parameter/save"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-02-25 16:11:57",
+            "enable": 0,
+            "icon": "",
+            "id": "110",
+            "name": "更新参数",
+            "orderNum": 0,
+            "parentId": "107",
+            "parentName": "参数管理",
+            "perms": "sys:parameter:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/sys/parameter/update"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-01 13:50:37",
+            "enable": 0,
+            "icon": "fas fa-tablet-alt",
+            "id": "121",
+            "name": "应用中心",
+            "orderNum": 1,
+            "parentId": "0",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 3,
+            "updateBy": "admin",
+            "updateTime": "2019-09-12 16:04:30",
+            "uri": "/indexPage/applyCenter"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-01 13:53:53",
+            "enable": 0,
+            "icon": "fa fa-asymmetrik",
+            "id": "122",
+            "name": "运营中心",
+            "orderNum": 2,
+            "parentId": "0",
+            "parentName": "",
+            "perms": "",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 3,
+            "updateBy": "superAdmin",
+            "updateTime": "2019-03-01 17:58:55",
+            "uri": "/indexPage/operationCenter"
+        },
+        {
+            "createBy": "superAdmin",
+            "createTime": "2019-03-04 10:17:50",
+            "enable": 0,
+            "icon": "",
+            "id": "123",
+            "name": "认证产品查询",
+            "orderNum": 0,
+            "parentId": "114",
+            "parentName": "认证列表",
+            "perms": "cert:customer:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/cert/customer/selectCustomer"
+        },
+        {
+            "createBy": "superAdmin",
+            "createTime": "2019-03-04 11:44:01",
+            "enable": 0,
+            "icon": "",
+            "id": "125",
+            "name": "查询省编码",
+            "orderNum": 0,
+            "parentId": "114",
+            "parentName": "认证列表",
+            "perms": "cert:provinces:select",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/cert/customer/selectProvinces"
+        },
+        {
+            "createBy": "superAdmin",
+            "createTime": "2019-03-04 11:44:52",
+            "enable": 0,
+            "icon": "",
+            "id": "126",
+            "name": "查询市编码",
+            "orderNum": 0,
+            "parentId": "114",
+            "parentName": "认证列表",
+            "perms": "cert:citys:select",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/cert/customer/selectCitys"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-05 17:52:24",
+            "enable": 0,
+            "icon": "",
+            "id": "131",
+            "name": "新增订单服务配置",
+            "orderNum": 0,
+            "parentId": "106",
+            "parentName": "新增服务配置",
+            "perms": "config:orderConfig:save",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-03-06 15:29:43",
+            "uri": "/orderDataLevelConfigServiceImpl/insertConfig"
+        },
+        {
+            "createBy": "superAdmin",
+            "createTime": "2019-03-06 14:15:06",
+            "enable": 0,
+            "icon": "",
+            "id": "136",
+            "name": "删除订单服务配置模板",
+            "orderNum": 0,
+            "parentId": "99",
+            "parentName": "订单服务配置列表",
+            "perms": "config:orderTemplate:select",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-03-06 14:58:13",
+            "uri": "/orderXmlTemplateServiceImpl/deleteTemplateByProId"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-06 17:21:18",
+            "enable": 0,
+            "icon": "",
+            "id": "144",
+            "name": "新增模型服务",
+            "orderNum": 0,
+            "parentId": "106",
+            "parentName": "新增服务配置",
+            "perms": "config:modelConfig:save",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/modelConfigServiceImpl/insertConfig"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-11 10:59:55",
+            "enable": 0,
+            "icon": "",
+            "id": "151",
+            "name": "获取报文key",
+            "orderNum": 0,
+            "parentId": "101",
+            "parentName": "报文服务配置列表",
+            "perms": "config:reportConfig:getDatagramKeys",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/reportConfigFacade/getDatagramKeys"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-11 14:05:37",
+            "enable": 0,
+            "icon": "",
+            "id": "152",
+            "name": "查询产品认证地区",
+            "orderNum": 0,
+            "parentId": "114",
+            "parentName": "认证列表",
+            "perms": "cert:area:select",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/cert/customer/selectCustomerArea"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-03-29 17:27:10",
+            "enable": 0,
+            "icon": "",
+            "id": "157",
+            "name": "查询pdf服务配置是否存在",
+            "orderNum": 0,
+            "parentId": "106",
+            "parentName": "新增服务配置",
+            "perms": "config:pdfConfig:verifyExists",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-03-29 17:41:32",
+            "uri": "/pdfConfigFacade/verifyExists"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-30 15:31:43",
+            "enable": 0,
+            "icon": "",
+            "id": "186",
+            "name": "分页查询服务反馈配置",
+            "orderNum": 0,
+            "parentId": "185",
+            "parentName": "服务反馈配置列表",
+            "perms": "feedback:config:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/feedbackConfigServiceImpl/pageConfig"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-30 15:29:37",
+            "enable": 0,
+            "icon": "fa fa-rss-square",
+            "id": "185",
+            "name": "服务反馈配置列表",
+            "orderNum": 2,
+            "parentId": "165",
+            "parentName": "服务反馈管理",
+            "perms": "feedback:config:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-04-30 15:30:10",
+            "uri": "/serviceFeedback/serviceFeedbackConfig"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-30 15:32:33",
+            "enable": 0,
+            "icon": "",
+            "id": "187",
+            "name": "新增服务反馈配置",
+            "orderNum": 0,
+            "parentId": "185",
+            "parentName": "服务反馈配置列表",
+            "perms": "feedback:config:save",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/feedbackConfigServiceImpl/insertConfig"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-30 15:33:18",
+            "enable": 0,
+            "icon": "",
+            "id": "188",
+            "name": "批量删除服务反馈配置",
+            "orderNum": 0,
+            "parentId": "185",
+            "parentName": "服务反馈配置列表",
+            "perms": "feedback:config:deleteBatch",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-04-30 18:18:19",
+            "uri": "/feedbackConfigServiceImpl/deleteConfigByIds"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-04-30 15:34:03",
+            "enable": 0,
+            "icon": "",
+            "id": "189",
+            "name": "更新服务反馈配置",
+            "orderNum": 0,
+            "parentId": "185",
+            "parentName": "服务反馈配置列表",
+            "perms": "feedback:config:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/feedbackConfigServiceImpl/updateConfigById"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-06 15:12:13",
+            "enable": 0,
+            "icon": "fa fa-cog",
+            "id": "208",
+            "name": "数据校验服务配置列表",
+            "orderNum": 1,
+            "parentId": "98",
+            "parentName": "服务配置管理",
+            "perms": "config:ruleCheckConfig:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "admin",
+            "updateTime": "2019-09-23 17:16:24",
+            "uri": "/config/ruleCheckConfigList"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-06 15:14:49",
+            "enable": 0,
+            "icon": "",
+            "id": "209",
+            "name": "批量查询规则校验配置",
+            "orderNum": 0,
+            "parentId": "208",
+            "parentName": "数据校验服务配置列表",
+            "perms": "config:ruleCheckConfig:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/checkModelConfigServiceImpl/selectConfigPage"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-06 15:16:46",
+            "enable": 0,
+            "icon": "",
+            "id": "210",
+            "name": "批量删除规则校验服务配置",
+            "orderNum": 0,
+            "parentId": "208",
+            "parentName": "数据校验服务配置列表",
+            "perms": "config:ruleCheckConfig:deleteBatch",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/checkModelConfigServiceImpl/deleteConfigBatch"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-06 15:17:34",
+            "enable": 0,
+            "icon": "",
+            "id": "211",
+            "name": "更新校验服务配置列表",
+            "orderNum": 0,
+            "parentId": "208",
+            "parentName": "数据校验服务配置列表",
+            "perms": "config:ruleCheckConfig:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/checkModelConfigServiceImpl/updateConfig"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-19 15:59:23",
+            "enable": 0,
+            "icon": "",
+            "id": "222",
+            "name": "分页查询反馈模板配置",
+            "orderNum": 0,
+            "parentId": "221",
+            "parentName": "反馈模板配置列表",
+            "perms": "feedback:templateConfig:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/taxFeedbackTemplateProviderImpl/page"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-19 16:00:42",
+            "enable": 0,
+            "icon": "",
+            "id": "223",
+            "name": "修改反馈模板配置",
+            "orderNum": 0,
+            "parentId": "221",
+            "parentName": "反馈模板配置列表",
+            "perms": "feedback:templateConfig:update",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/taxFeedbackTemplateProviderImpl/updateById"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-19 16:01:52",
+            "enable": 0,
+            "icon": "",
+            "id": "224",
+            "name": "新增反馈模板配置",
+            "orderNum": 0,
+            "parentId": "221",
+            "parentName": "反馈模板配置列表",
+            "perms": "feedback:templateConfig:add",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/taxFeedbackTemplateProviderImpl/add"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-19 16:02:54",
+            "enable": 0,
+            "icon": "",
+            "id": "225",
+            "name": "批量删除反馈模板配置",
+            "orderNum": 0,
+            "parentId": "221",
+            "parentName": "反馈模板配置列表",
+            "perms": "feedback:templateConfig:deleteBatch",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/taxFeedbackTemplateProviderImpl/deleteByIdBatch"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-06-19 16:03:54",
+            "enable": 0,
+            "icon": "",
+            "id": "226",
+            "name": "校验反馈模板配置是否存在",
+            "orderNum": 0,
+            "parentId": "221",
+            "parentName": "反馈模板配置列表",
+            "perms": "feedback:templateConfig:verifyExists",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/taxFeedbackTemplateProviderImpl/verifyExists"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-09-27 16:38:40",
+            "enable": 0,
+            "icon": "fa fa-btc",
+            "id": "243",
+            "name": "银行机构列表",
+            "orderNum": 0,
+            "parentId": "242",
+            "parentName": "银行机构管理",
+            "perms": "bank:org:config",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/bankOrgConfig/bankOrgConfig"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2019-09-27 17:26:22",
+            "enable": 0,
+            "icon": "",
+            "id": "244",
+            "name": "分页查询机构配置",
+            "orderNum": 0,
+            "parentId": "243",
+            "parentName": "银行机构列表",
+            "perms": "bank:org:page",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 2,
+            "updateBy": "admin",
+            "updateTime": "2019-09-27 17:30:48",
+            "uri": "/productBankReferenceProvider/page"
+        },
+        {
+            "createBy": "admin",
+            "createTime": "2020-05-12 17:31:09",
+            "enable": 0,
+            "icon": "iconfont iconicon_study",
+            "id": "251",
+            "name": "测试菜单",
+            "orderNum": 12,
+            "parentId": "1",
+            "parentName": "系统管理",
+            "perms": "a,b,c",
+            "remark": "",
+            "subSysMenus": [
+
+            ],
+            "type": 1,
+            "updateBy": "",
+            "updateTime": null,
+            "uri": "/test"
+        }
+    ],
+    "iTotalRecords": 205,
+    "iTotalDisplayRecords": 205,
+    "httpCode": 200,
+    "msg": "请求成功",
+    "timestamp": 1590374464664
+}

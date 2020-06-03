@@ -1,5 +1,5 @@
 <template>
-  <div class="basic-container">
+  <div class="basic-container" >
     <el-card>
       <slot></slot>
     </el-card>
@@ -8,7 +8,15 @@
 
 <script>
 export default {
-  name: "basicContainer"
+  name: "basicContainer",
+  data(){
+    return {
+      styleObj:{
+        paddingLeft:'0',
+        paddingRight:'0'
+      }
+    }
+  }
 };
 </script>
 

@@ -51,7 +51,7 @@ export default {
     },
     openMenu(item) {
       this.$store.dispatch("GetMenu", item.parentId).then(data => {
-        
+        console.log(data)
         let childMenu=[]
         for(let el of this.menuAll){
           if(el.parentId==item.id){
@@ -63,24 +63,26 @@ export default {
           this.$router.$avueRouter.formatRoutes(childMenu, true);
         // }
         this.$store.commit('SET_MENU',childMenu)
-        let itemActive,
-          childItemActive = 0;
-        if (item.path) {
-          itemActive = item;
-        } else {
-          if (this.menuAll[childItemActive].length == 0) {
-            itemActive = this.menuAll[childItemActive];
-          } else {
-            itemActive = this.menuAll[childItemActive].children[childItemActive];
-          }
-        }
-        this.$router.push({
-          path: this.$router.$avueRouter.getPath({
-            name: itemActive.label,
-            src: itemActive.path,
-            i18n: itemActive.meta?itemActive.meta.i18n:''
-          })
-        });
+        // let itemActive,
+        //   childItemActive = 0;
+        // if (item.path) {
+        //   itemActive = item;
+        // } else {
+        //   if (this.menuAll[childItemActive].length == 0) {
+        //     itemActive = this.menuAll[childItemActive];
+        //   } else {
+        //     itemActive = this.menuAll[childItemActive].children[childItemActive];
+        //   }
+        // }
+
+        // this.$router.push({
+        //   path: this.$router.$avueRouter.getPath({
+        //     name: itemActive.label,
+        //     src: itemActive.path,
+        //     i18n: itemActive.meta?itemActive.meta.i18n:''
+        //   })
+        // });
+        
       });
     }
   }

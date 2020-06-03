@@ -1,0 +1,26 @@
+{
+    "data": {
+        "createBy": "",
+        "createTime": null,
+        "deptId": "dp550339728806797312",
+        "deptName": "信息技术部",
+        "email": "22@qq.com",
+        "id": "SU_447071843556261888",
+        "lastLoginIp": "",
+        "lastLoginTime": null,
+        "loginName": "",
+        "mobile": "13500000000",
+        "passwd": "171bfbf102d2598258b62dcaad1c50ebbba3860d4272dbca442de47625988c8a",
+        "roleIdList": [
+            "SR_598480097452777472"
+        ],
+        "secretKey": "",
+        "status": 1,
+        "updateBy": "admin",
+        "updateTime": "2019-06-04 17:21:10",
+        "username": "admin"
+    },
+    "httpCode": 200,
+    "msg": "请求成功",
+    "timestamp": 1590390130527
+}

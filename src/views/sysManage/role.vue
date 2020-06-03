@@ -272,7 +272,7 @@ export default {
                 this.searchLoading = true;
                 this.tableLoading = true;
                 this.requestFlag = true;
-                this.$refs[formName].validate(function(valid){
+                this.$refs[formName].validate((valid)=>{
                     if (valid) {
                         var menuIds= [];
                         this.$refs.roleTree.getCheckedNodes().map( function(item){
@@ -363,7 +363,7 @@ export default {
                     //     self.zTreeObj02.checkNode(node, true, false);
                     //     self.zTreeObj02.updateNode(node);
                     // });
-                    this.$refs.roleTree.setCheckedNodes(this.roleDetails.menuIdList)
+                    this.$refs.roleTree.setCheckedKeys(this.roleDetails.menuIdList)
                     /*self.roleDetails.deptIdList.map(function(item){
                         var node =  self.zTreeObj03.getNodeByParam("id",item,null);
                         self.zTreeObj03.selectNode(node);

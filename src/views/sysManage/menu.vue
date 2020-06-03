@@ -150,13 +150,6 @@ import {menuAllList} from '@/api/sysManageApi/commonApi'
 import iconList from "@/config/iconList";
 export default {
     data(){
-            // var isPositiveInteger = function(rule,value,callback){
-            //     if(!( /^[0-9]+$/ .test(value))){
-            //         callback(new Error('id值为正整数!'));
-            //     }else{
-            //         callback();
-            //     }
-            // };
             Array.prototype.indexOf = function (val) {
                 for (var i = 0; i < this.length; i++) {
                     if (this[i] == val) return i;
@@ -244,13 +237,16 @@ export default {
                     this.menuData = res.data;
                     // 添加父级菜单
                     this.filterMenuData = [];
-                    res.data.map((item)=>{
-                        if(item.type == 0){
-                            this.filterMenuData.push(item);
+                    if(res.data){
+                        res.data.map((item)=>{
+                            if(item.type == 3){     //type:0是目录，1是菜单，2是按钮，3是模块
+                                this.filterMenuData.push(item);
+                            }
+                        });
+                        for(let item of  this.filterMenuData){
+                            this.findChildData(item.id,item,this.menuData)
                         }
-                    });
-                    for(let item of  this.filterMenuData){
-                        this.findChildData(item.id,item,this.menuData)
+                        console.log(this.filterMenuData)
                     }
                 });
             },
@@ -509,6 +505,7 @@ export default {
                     case 0: return "目录"; 
                     case 1: return "菜单"; 
                     case 2: return "按钮";
+                    case 3: return "模块";
                     default: return ""; 
                 }
             },
