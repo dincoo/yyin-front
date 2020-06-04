@@ -44,6 +44,7 @@ const user = {
         roles: [],
         menu: getStore({ name: 'menu' }) || [],
         menuAll: [],
+        menuModule: [],
         token: getStore({ name: 'token' }) || '',
     },
     actions: {
@@ -136,14 +137,15 @@ const user = {
             })
         },
         // 获取头部菜单
-        GetTopMenu() {
+        GetTopMenu({ commit }) {
             return new Promise(resolve => {
                 // getTopMenu().then((res) => {
                 //     const data = res.data || []
                 //     resolve(data)
                 // })
                 getMenu().then(res => {
-                    const data = res.data.module
+                    const data = res.data
+                    commit('SET_MENU_MODULE', res.data.module)
                     resolve(data)
                 })
             })
@@ -209,6 +211,10 @@ const user = {
                 state.permission[ele] = true;
             });
             setStore({ name: 'permission', content: state.permission, type: 'session' })
+        },
+        // 设置菜单模块
+        SET_MENU_MODULE: (state, val) => {
+            state.menuModule = val
         }
     }
 

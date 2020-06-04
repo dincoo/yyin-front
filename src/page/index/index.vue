@@ -1,19 +1,19 @@
 <template>
-  <div class="avue-contail" :style="{}"
+  <div class="avue-contail" :style="styleConatinObj"
        :class="{'avue--collapse':isCollapse}">
-    <div class="avue-header" :style="{paddingLeft:layoutType=='nav'?'240px':0}">
+    <div class="avue-header" :style="styleHeaderObj">
       <!-- 顶部导航栏 -->
       <top />
     </div>
 
     <div class="avue-layout">
-      <div class="avue-left" v-if="layoutType==='nav'">
+      <div class="avue-left" v-if="website.layoutType==='nav'">
         <!-- 左侧导航栏 -->
         <sidebar />
       </div>
-      <div class="avue-main" :style="{}">
+      <div class="avue-main" :style="styleMainObj">
         <!-- 顶部标签卡 -->
-        <tags v-if="layoutType==='nav'"/>
+        <tags v-if="website.layoutType==='nav'"/>
         <breadcrumb v-else></breadcrumb>
         <!-- 主体视图层 -->
         <el-scrollbar style="height:100%">
@@ -45,9 +45,7 @@ import top from "./top/";
 import sidebar from "./sidebar/";
 import admin from "@/util/admin";
 import breadcrumb from './breadcrumb'
-// import { validatenull } from "@/util/validate";
-// import { calcDate } from "@/util/date.js";
-// import { getStore } from "@/util/store.js";
+
 export default {
   components: {
     top,
@@ -58,19 +56,14 @@ export default {
   name: "index",
   data() {
     return {
-      layoutType:'nav',
+      // layoutType:'nav',
       //刷新token锁
       refreshLock: false,
       //刷新token的时间
       refreshTime: "",
-      styleConatinObj:{
-        width:'90%',
-        margin:'0 auto'
-      },
-      styleMainObj:{
-        left:'5%',
-        width:'90%'
-      }
+      styleConatinObj:{},
+      styleMainObj:{},
+      styleHeaderObj:{}
     };
   },
   created() {
@@ -79,10 +72,38 @@ export default {
   },
   mounted() {
     this.init();
+    this.setLayoutType(this.website.layoutType)
   },
-  computed: mapGetters(["isLock", "isCollapse", "website","tabCache"]),
+  computed: {
+    ...mapGetters(["isLock", "isCollapse", "website","tabCache"])
+  },
+  watch:{
+    'website.layoutType':function(val){
+      this.setLayoutType(val)
+    }
+  },
   props: [],
   methods: {
+    setLayoutType(val){
+      if(val==='top'){
+        this.styleConatinObj={
+          width:'90%',
+          margin:'0 auto'
+        }
+        this.styleMainObj={
+          left:'5%',
+          width:'90%'
+        }
+        this.styleHeaderObj={
+          paddingLeft:'0',
+          margin:'0 auto'
+        }
+      }else{
+        this.styleConatinObj={}
+        this.styleMainObj={}
+        this.styleHeaderObj={}
+      }
+    },
     showCollapse() {
       this.$store.commit("SET_COLLAPSE");
     },

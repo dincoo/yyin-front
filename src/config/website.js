@@ -2,8 +2,8 @@
  * 全局配置文件
  */
 export default {
-    title: "微众信科管理后台",
-    indexTitle: '微众信科管理后台',
+    title: "微众信科",
+    indexTitle: '微众信科',
     clientId: 'saber', // 客户端id
     clientSecret: 'saber_secret', // 客户端密钥
     tenantMode: false, // 是否开启租户模式

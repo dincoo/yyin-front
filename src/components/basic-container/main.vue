@@ -1,5 +1,5 @@
 <template>
-  <div class="basic-container" >
+  <div class="basic-container" :style="styleObj">
     <el-card>
       <slot></slot>
     </el-card>
@@ -11,9 +11,33 @@ export default {
   name: "basicContainer",
   data(){
     return {
-      styleObj:{
-        paddingLeft:'0',
-        paddingRight:'0'
+      styleObj:{}
+    }
+  },
+  computed: {
+    layoutType(){
+      return this.$store.getters.website.layoutType
+    }
+  },
+  created(){
+    this.setStyleObj(this.layoutType)
+  },
+  watch:{
+    layoutType(val){
+      this.setStyleObj(val)
+    }
+  },
+  methods:{
+    // 设置样式结构
+    setStyleObj(val){
+      console.log(val)
+      if(val==='nav'){
+        this.styleObj={}
+      }else{
+        this.styleObj={
+          paddingLeft:'0',
+          paddingRight:'0'
+        }
       }
     }
   }

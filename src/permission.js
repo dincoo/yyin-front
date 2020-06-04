@@ -11,6 +11,7 @@ import 'nprogress/nprogress.css' // progress bar style
 NProgress.configure({ showSpinner: false });
 const lockPage = store.getters.website.lockPage; //锁屏页
 router.beforeEach((to, from, next) => {
+    // console.log(to)
     if (to.matched.length === 0 && to.fullPath.indexOf("?sec") === -1) {
         next(to.path + "?sec");
         window.location.reload();
@@ -32,31 +33,6 @@ router.beforeEach((to, from, next) => {
         }
     }
     const meta = to.meta || {};
-    // // 自添加
-    // const value = to.query.src || to.fullPath;
-    // const label = to.query.name || to.name;
-    // const meta = to.meta || router.$avueRouter.meta || {};
-    // const i18n = to.query.i18n;
-    // if (meta.isTab !== false && !validatenull(value) && !validatenull(label)) {
-    //     store.commit('ADD_TAG', {
-    //         label: label,
-    //         value: value,
-    //         params: to.params,
-    //         query: to.query,
-    //         meta: (() => {
-    //             if (!i18n) {
-    //                 return meta
-    //             }
-    //             return {
-    //                 i18n: i18n
-    //             }
-    //         })(),
-    //         group: router.$avueRouter.group || []
-    //     });
-    // }
-    // console.log(to)
-    // next()
-    // return
 
     if (getToken()) {
         if (store.getters.isLock && to.path !== lockPage) { //如果系统激活锁屏，全部跳转到锁屏页

@@ -14,10 +14,12 @@ import { Message } from 'element-ui'
 import website from '@/config/website';
 import NProgress from 'nprogress' // progress bar
 import 'nprogress/nprogress.css' // progress bar style
+import { baseUrl } from '@/config/env'
 // import { Base64 } from 'js-base64';
 
 axios.defaults.timeout = 60000;
-//返回其他状态吗
+axios.defaults.baseUrl = baseUrl
+    //返回其他状态吗
 axios.defaults.validateStatus = function(status) {
     return status >= 200 && status <= 500; // 默认的
 };
