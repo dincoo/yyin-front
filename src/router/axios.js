@@ -37,17 +37,17 @@ axios.interceptors.request.use(config => {
     const isToken = meta.isToken === false;
     // config.headers['Authorization'] = `Basic ${Base64.encode(`${website.clientId}:${website.clientSecret}`)}`;
     if (getToken() && !isToken) {
-        config.headers['Cookie'] = getToken() // 让每个请求携带token--['Authorization']为自定义key 请根据实际情况自行修改
+        config.headers['token'] = getToken() // 让每个请求携带token--['Authorization']为自定义key 请根据实际情况自行修改
     }
     //headers中配置serialize为true开启序列化
     // if (config.method === 'post' && meta.isSerialize === true) {
     //   config.data = serialize(config.data);
     // }
-    if (config.url.indexOf("?") != -1) {
-        config.url = config.url + "&timestamp=" + (new Date().getTime());
-    } else {
-        config.url = config.url + "?timestamp=" + (new Date().getTime());
-    }
+    // if (config.url.indexOf("?") != -1) {
+    //     config.url = config.url + "&timestamp=" + (new Date().getTime());
+    // } else {
+    //     config.url = config.url + "?timestamp=" + (new Date().getTime());
+    // }
     return config
 }, error => {
     return Promise.reject(error)
@@ -56,9 +56,9 @@ axios.interceptors.request.use(config => {
 axios.interceptors.response.use(res => {
     NProgress.done();
     // console.log(res)
-    const status = res.data.httpCode || 200
+    const status = res.data.httpCode || res.status || 200
     const statusWhiteList = website.statusWhiteList || [];
-    const message = res.data.data || res.data.msg || '未知错误';
+    const message = res.data.data || res.data.message || '接口错误';
     //如果在白名单里则自行catch逻辑处理
     if (statusWhiteList.includes(status)) return Promise.reject(res);
     //如果是401则跳转到登录页面

@@ -14,7 +14,7 @@ export default {
     tokenTime: 6000,
     //http的status默认放行不才用统一处理的,
     statusWhiteList: [],
-    // 布局方式(nav：侧边栏导航；top：头部导航)
+    // 布局方式(nav：显示侧边栏导航；top：仅显示头部导航)
     layoutType: 'nav',
     //配置首页标签不可关闭
     isFirstPage: false,

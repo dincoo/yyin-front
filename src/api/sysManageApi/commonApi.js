@@ -1,21 +1,22 @@
 import request from '@/router/axios';
+import { baseUrl } from '@/config/env';
 export const departList = function() { // 获取部门列表
     return request({
-        url: '/vz-island/sys/dept/list',
+        url: baseUrl + '/sys/dept/list',
         method: 'get'
     });
 };
 
 export const roleSelectList = function() { // 权限选择列表;
     return request({
-        url: '/vz-island/sys/role/select',
+        url: baseUrl + '/sys/role/select',
         method: 'get'
     });
 };
 
 export const menuAllList = function() { // 权限选择列表;
     return request({
-        url: '/vz-island/sys/menu/list',
+        url: baseUrl + '/sys/menu/list',
         method: 'get'
     });
 };

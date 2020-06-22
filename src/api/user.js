@@ -2,15 +2,10 @@ import request from '@/router/axios';
 import { baseUrl } from '@/config/env';
 // import website from "@/config/website";
 // 用户名密码登录
-export const loginByUsername = (tenantId, account, password, type, key, code) => request({
-    url: '/vz-island/sys/login',
+export const loginByUsername = (params) => request({
+    url: baseUrl + '/login',
     method: 'post',
-    data: {
-        captcha: code,
-        passwd: password,
-        userName: account,
-        uuid: ''
-    }
+    data: params
 });
 
 export const getButtons = () => request({
@@ -29,9 +24,9 @@ export const refeshToken = () => request({
 })
 
 export const getMenu = () => request({
-    // url: baseUrl + '/blade-system/menu/routes',
-    url: '/vz-island/sys/menu/listMenu',
-    method: 'get'
+    url: baseUrl + '/sys/menu/listMenu',
+    method: 'get',
+    data: {}
 });
 
 export const getCaptcha = () => request({
@@ -51,6 +46,6 @@ export const sendLogs = (list) => request({
 })
 
 export const logout = () => request({
-    url: baseUrl + '/user/logout',
+    url: baseUrl + '/sys/logout',
     method: 'get'
 })

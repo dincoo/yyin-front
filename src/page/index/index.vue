@@ -1,5 +1,5 @@
 <template>
-  <div class="avue-contail" :style="styleConatinObj"
+  <div class="avue-contail" 
        :class="{'avue--collapse':isCollapse}">
     <div class="avue-header" :style="styleHeaderObj">
       <!-- 顶部导航栏 -->
@@ -61,7 +61,6 @@ export default {
       refreshLock: false,
       //刷新token的时间
       refreshTime: "",
-      styleConatinObj:{},
       styleMainObj:{},
       styleHeaderObj:{}
     };
@@ -86,10 +85,6 @@ export default {
   methods: {
     setLayoutType(val){
       if(val==='top'){
-        this.styleConatinObj={
-          width:'90%',
-          margin:'0 auto'
-        }
         this.styleMainObj={
           left:'5%',
           width:'90%'
@@ -99,7 +94,6 @@ export default {
           margin:'0 auto'
         }
       }else{
-        this.styleConatinObj={}
         this.styleMainObj={}
         this.styleHeaderObj={}
       }

@@ -31,6 +31,7 @@ export default {
   },
   created() {
     this.$store.dispatch("GetMenu").then(data => {
+      // console.log(data)
       if (data.length === 0) return;
       this.$router.$avueRouter.formatRoutes(data, true);
     });

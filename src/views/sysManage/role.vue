@@ -217,10 +217,10 @@ export default {
                     self.searchLoading = false;
                     self.tableLoading = false;
                     self.requestFlag = false;
-                    self.roleData = res.data.list;
-                    self.total = res.data.totalCount;
-                    self.currentPage = res.data.currPage;
-                    self.size = res.data.pageSize;
+                    self.roleData = res.data.data;
+                    self.total = res.data.count;
+                    self.currentPage = res.data.current;
+                    self.size = res.data.size;
                 })
             },
             //  获取菜单列表
@@ -383,11 +383,11 @@ export default {
                     return false;
                 }
 
-                this.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {
+                this.$confirm('此操作将永久删除该数据, 是否继续?', '提示', {
                     confirmButtonText: '确定',
                     cancelButtonText: '取消',
                     type: 'warning'
-                }).then(function(){
+                }).then(()=>{
                     var roleIds = [];
                     self.multipleSelection.map( function(item){
                         roleIds.push(item.id);
@@ -396,8 +396,8 @@ export default {
                     this.searchLoading = true;
                     this.tableLoading = true;
                     this.requestFlag = true;
-                    deleteRole(params).then(function(res){
-                        if(res.data >= 1){
+                    deleteRole(params).then((res)=>{
+                        if(res.data.code=='200'){
                             self.$message({
                                 type: 'success',
                                 message: '删除成功!'
@@ -412,8 +412,14 @@ export default {
                                 message: '删除失败!'
                             });
                         }
+                    }).catch(err=>{
+                        console.log(err)
+                        self.searchLoading = false;
+                        self.tableLoading = false;
+                        self.requestFlag = false;
                     });
-                }).catch(function(){
+                }).catch((err)=>{
+                    console.log(err)
                     self.searchLoading = false;
                     self.tableLoading = false;
                     self.requestFlag=false;

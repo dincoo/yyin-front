@@ -3,9 +3,9 @@
         <div >
             <el-row style="margin-bottom: 10px;">
                 <el-col>
-                    <el-button shiro:hasPermission="sys:menu:save" type="primary" size="small" icon="el-icon-plus" @click="addInfo">新增</el-button>
+                    <el-button  type="primary" size="small" icon="el-icon-plus" @click="addInfo">新增</el-button>
                     
-                    <el-button shiro:hasPermission="sys:menu:delete" type="danger" size="small" icon="el-icon-delete" @click="deleteInfo">删除</el-button>
+                    <el-button  type="danger" size="small" icon="el-icon-delete" @click="deleteInfo">删除</el-button>
                 </el-col>
             </el-row>
             <el-row class="paddingTop10" >
@@ -79,9 +79,10 @@
             <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
                     <el-form-item label="类型" prop="type">
                         <el-radio-group v-model="ruleForm.type">
-                            <el-radio label = "0" >目录</el-radio>
-                            <el-radio label = "1" >菜单</el-radio>
-                            <el-radio label = "2" >按钮</el-radio>
+                            <el-radio label = "0" >模块</el-radio>
+                            <el-radio label = "1" >目录</el-radio>
+                            <el-radio label = "2" >菜单</el-radio>
+                            <el-radio label = "3" >按钮</el-radio>
                         </el-radio-group>
                     </el-form-item>
                     <el-form-item label="菜单名称" prop="name">
@@ -89,30 +90,30 @@
                                   placeholder="菜单名称"
                         ></el-input>
                     </el-form-item>
-                    <el-form-item label="上级菜单" prop="parentName">
+                    <el-form-item label="上级菜单" prop="parentName" >
                         <el-input v-model="ruleForm.parentName"
                                   placeholder="上级菜单"
                                   readonly="readonly"
                                   @click.native="departmentSelect"
                         ></el-input>
                     </el-form-item>
-                    <el-form-item label="菜单URL" prop="uri" v-if="ruleForm.type == 1|| ruleForm.type == 2">
+                    <el-form-item label="菜单URL" prop="uri" v-if="ruleForm.type == 2|| ruleForm.type == 3">
                         <el-input v-model="ruleForm.uri"
                                   placeholder="菜单URL"
                         ></el-input>
                     </el-form-item>
-                    <el-form-item label="授权标识" prop="perms"  v-if="ruleForm.type == 1 || ruleForm.type == 2">
+                    <el-form-item label="授权标识" prop="perms"  v-if="ruleForm.type == 2 || ruleForm.type == 3">
                         <el-input v-model="ruleForm.perms"
                                   placeholder="多个用逗号分隔,如:user:list,user:create"
                         ></el-input>
                     </el-form-item>
-                    <el-form-item label="排序号" prop="orderNum"  v-if="ruleForm.type == 0 || ruleForm.type == 1">
+                    <el-form-item label="排序号" prop="orderNum"  v-if="ruleForm.type == 0||ruleForm.type == 1 || ruleForm.type == 2">
                         <el-input v-model="ruleForm.orderNum"
                                   type="number"
                                   min="0"
                                   placeholder="排序号"></el-input>
                     </el-form-item>
-                    <el-form-item label="图标" prop="icon" v-if="ruleForm.type == 0 || ruleForm.type == 1">
+                    <el-form-item label="图标" prop="icon" v-if="ruleForm.type == 0||ruleForm.type == 1 || ruleForm.type == 2">
                         <el-input v-model="ruleForm.icon" @focus="showIconDialog=true"
                                   placeholder="菜单图标"
                         ></el-input>
@@ -142,6 +143,9 @@
                 </el-tab-pane>
             </el-tabs>
         </el-dialog>
+        <el-drawer title="接口权限配置" :visible.sync="showApiPermissionDrawer" size="60%">
+            
+        </el-drawer>
     </basic-container>
 </template>
 <script>
@@ -199,7 +203,7 @@ export default {
                         { required: true, message: '请选择上级菜单', trigger: 'change' }
                     ],
                     icon: [
-                        { required: true, message: '请输入图标类名称(参考fontawesome字体库)', trigger: 'change' }
+                        { required: false, message: '请输入图标类名称(参考fontawesome字体库)', trigger: 'change' }
                     ],
                     type: [
                         { required: true, message: '请输入类型', trigger: 'change' }
@@ -208,7 +212,7 @@ export default {
                         { required: true, message: '请输入菜单URL', trigger: 'blur' }
                     ],
                     perms: [
-                        { required: true, message: '请输入授权标识', trigger: 'change' }
+                        { required: true, message: '请输入授权标识', trigger: 'blur' }
                     ],
                     orderNum: [
                         { required: true, message: '排序号不能为空', trigger: 'change' }
@@ -222,7 +226,9 @@ export default {
                 selectZTreeData: null,
                 isActive: false,
                 selectedTreeNode:null,
-                iconList:[]
+                iconList:[],
+                showApiPermissionDrawer:false,
+                apiTableData:[]
             }
         },
         mounted: function () {
@@ -239,7 +245,7 @@ export default {
                     this.filterMenuData = [];
                     if(res.data){
                         res.data.map((item)=>{
-                            if(item.type == 3){     //type:0是目录，1是菜单，2是按钮，3是模块
+                            if(item.type == 0){     //type:0是模块，1是目录，2是菜单，3是按钮
                                 this.filterMenuData.push(item);
                             }
                         });
@@ -264,17 +270,23 @@ export default {
             getMenuSelectList: function(){
                 menuSelectList().then( (res)=>{
                     this.zNodes = res.data;
-                    this.topNode=null;
+                    this.topNode={
+                        id: "-1",
+                        icon: '',
+                        name: '一级菜单',
+                        parentId:'-1',
+                        children:[]
+                    };
                     for(let item of this.zNodes){
-                        if(item.parentId=='-1'){
-                            this.topNode=item
+                        if(item.type==0){
+                            this.topNode.children.push(item)
                         }
                     }
-                    console.log(this.topNode)
-                    if(this.topNode){
-                        this.findChildData(this.topNode.id,this.topNode,this.zNodes);
-                        console.log(this.topNode)
+                    for(let child of this.topNode.children){
+                        this.findChildData(child.id,child,this.zNodes);
                     }
+                    // console.log(this.topNode)
+                    
                 });
             },
             // 设置菜单图标
@@ -287,26 +299,34 @@ export default {
             },
             submitForm: function(formName){
                 // var self = this;
+                console.log(this.selectZTreeData,this.ruleForm)
                 this.$refs[formName].validate((valid)=>{
                     if (valid) {
                         var checkFlag = false;
                         console.log(this.selectZTreeData,this.ruleForm)
                         if(this.selectZTreeData){
                             if( this.ruleForm.type == 0){ // 创建目录校验
+                                if(this.selectZTreeData.parentId == -1){
+                                    checkFlag = true;
+                                }else{
+                                    this.$message({message: '创建模块上级菜单错误', type: 'warning'});
+                                    return false;
+                                }
+                            }else if(this.ruleForm.type == 1){
                                 if(this.selectZTreeData.type == 0){
                                     checkFlag = true;
                                 }else{
                                     this.$message({message: '创建目录上级菜单错误', type: 'warning'});
                                     return false;
                                 }
-                            }else if(this.ruleForm.type == 1){
+                            }else if(this.ruleForm.type == 2){
                                 if(this.selectZTreeData.type == 1){
                                     checkFlag = true;
                                 }else{
                                     this.$message({message: '创建菜单上级菜单错误', type: 'warning'});
                                     return false;
                                 }
-                            }else if(this.ruleForm.type == 2){
+                            }else if(this.ruleForm.type == 3){
                                 if(this.selectZTreeData.type == 2){
                                     checkFlag = true;
                                 }else{
@@ -320,9 +340,12 @@ export default {
                                 var params = Object.assign( this.ruleForm, {
                                     parentId: this.selectedTreeNode.id
                                 });
-
+                                // if(params.parentId=='-1'){
+                                //     params.parentId=''
+                                // }
+                                delete params.id
                                 addMenu(params).then((res)=>{
-                                    if(res.data == 1){
+                                    if(res.code=='200'){
                                         this.$message({type: 'success', message: '添加成功!'});
                                         this.showHide = false;
                                         this.getMenuList();
@@ -335,6 +358,9 @@ export default {
                                 id: this.menuDetails.id,
                                 parentId: this.menuDetails.parentId
                             });
+                            // if(params.parentId=='-1'){
+                            //     params.parentId=''
+                            // }
                             ModifyMenu(params).then((res)=>{
                                 console.log(res)
                                 this.$message({type: 'success', message: '修改成功!'});
@@ -355,6 +381,7 @@ export default {
                 this.showHide = true;
                 if(this.$refs["ruleForm"]){
                     this.$refs["ruleForm"].resetFields();
+                    this.$refs['ruleForm'].clearValidate();
                 }
             },
             // 显示编辑弹框
@@ -363,13 +390,10 @@ export default {
                 this.panelTitle = "编辑";
                 var msg = '';
                 var flag = false;
-                // if(this.multipleSelection.length == 0){
-                //     msg = "没有选中部门";
-                //     flag = true;
-                // }else if( this.multipleSelection.length > 1 ){
-                //     msg = "只能选中一个部门进行修改";
-                //     flag = true;
-                // }
+                if(this.$refs["ruleForm"]){
+                    this.$refs["ruleForm"].resetFields();
+                    this.$refs['ruleForm'].clearValidate();
+                }
                 if(flag){
                     this.$message({
                         message: msg,
@@ -391,15 +415,16 @@ export default {
                         }
                     });
                     console.log(selectObj)
+                     this.selectZTreeData = selectObj;
                     self.ruleForm = {
                         name: self.menuDetails.name,
                         id: self.menuDetails.id.toString(),
-                        parentName: self.menuDetails.parentName,
-                        icon: self.menuDetails.icon,
+                        parentName: self.menuDetails.parentName||'',
+                        icon: self.menuDetails.icon||'',
                         type: self.menuDetails.type.toString(),
                         orderNum: self.menuDetails.orderNum.toString(),
-                        uri: self.menuDetails.uri,
-                        perms: self.menuDetails.perms
+                        uri: self.menuDetails.uri||'',
+                        perms: self.menuDetails.perms||''
                     };
                     /* this.zTreeObj.selectNode( selectObj, false, false );*/
                 });
@@ -413,13 +438,17 @@ export default {
                     });
                     return false;
                 }else if(this.multipleSelection.length >1){
-                    this.$message({
-                        message: '不能选中多个菜单',
-                        type: 'warning'
-                    });
-                    return false;
+                    for(let i=0;i<this.multipleSelection.length;i++){
+                        if(this.multipleSelection[i].children&&this.multipleSelection[i].children.length>0){
+                            this.$message({
+                                message: '所选菜单包含子菜单，请先删除子菜单',
+                                type: 'warning'
+                            });
+                            return false
+                        }
+                    }
                 }
-                this.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {
+                this.$confirm('此操作将永久删除该数据, 是否继续?', '提示', {
                     confirmButtonText: '确定',
                     cancelButtonText: '取消',
                     type: 'warning'
@@ -428,9 +457,8 @@ export default {
                     self.multipleSelection.map(function(item){
                         ids.push(item.id);
                     });
-                    var params = JSON.stringify(ids);
-                    deleteMenu(params).then(function(res){
-                        if(res.data >= 1){
+                    deleteMenu(ids).then(function(res){
+                        if(res.code=='200'){
                             self.$message({
                                 type: 'success',
                                 message: '删除成功!'
@@ -455,43 +483,16 @@ export default {
             },
             departmentSelect: function(){
                 this.treeVisible = true;
-                // var self = this;
-                // this.$nextTick(function(){
-                //     self.initTree();
-                // });
             },
-            // initTree: function(){
-            //     var setting = {
-            //         data : {
-            //             simpleData : {
-            //                 enable : true,
-            //                 rootPId : 0,
-            //                 idKey : "id",
-            //                 pIdKey : "parentId"
-            //             },
-            //             key: {
-            //                 uri: ""
-            //             }
-            //         },
-            //         check : {
-            //             enable : false,
-            //             chkStyle : "checkbox",
-            //             chkboxType : {
-            //                 "Y" : "ps",
-            //                 "N" : "ps"
-            //             }
-            //         }
-            //     };
-            //     this.zTreeObj = $.fn.zTree.init($("#zTree"), setting, this.zNodes);
-            // },
             // 选中节点
             handleNodeClick(data){
                 console.log(data)
                 this.selectedTreeNode=data;
             },
             treeSubmit: function(){
-                let selectNode = this.selectedTreeNode.children[0];
+                let selectNode = this.selectedTreeNode;
                 this.selectZTreeData = selectNode;
+                console.log(this.selectZTreeData)
                 this.ruleForm.parentName = this.selectedTreeNode.name;
                 this.treeVisible = false;
                 if(!this.addModifyFlag){
@@ -502,10 +503,10 @@ export default {
         filters: {
             statesFormat: function (value) {
                 switch (value){
-                    case 0: return "目录"; 
-                    case 1: return "菜单"; 
-                    case 2: return "按钮";
-                    case 3: return "模块";
+                    case 1: return "目录"; 
+                    case 2: return "菜单"; 
+                    case 3: return "按钮";
+                    case 0: return "模块";
                     default: return ""; 
                 }
             },
@@ -527,5 +528,8 @@ export default {
     }
     .active-icon{
         color: #409EFF;
+    }
+    .el-drawer__body{
+        padding: 20px;
     }
 </style>

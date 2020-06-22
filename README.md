@@ -8,14 +8,14 @@ $ cd Saber
 $ yarn install
 # 启动
 $ yarn run serve     
-# mock数据
+# mock数据（本地node服务，模拟后台接口返回数据。若有真实后台接口服务，不用启动该服务）
 yarn run mock
 ```
 ## 主要文件
 permission.js 路由权限相关逻辑。用全局的路由钩子，每次路由跳转前，会验证用户是否已登录（即cookie存在并尚未失效）。若已登录：锁屏被激活，则跳转到锁屏页；否则跳转到对应的页面或标签页。若未登录并且跳转到需验证权限的页面，则重定向到登录页。
 备注：首页头部有个锁屏按钮，类似电脑的锁屏功能，锁屏之后，输入密码才能从新进入首页。
 src/util/auth.js中使用js-cookie封装了token的读写，并设置了2小时的有效时间。
-src/config/website.js 是全局配置文件，首次进入时的默认值。主要设置：captchaMode是否开启验证码，isFirstPage首页标签是否可关闭。
+src/config/website.js 是全局配置文件，首次进入时的默认值。主要设置：captchaMode是否开启验证码，isFirstPage首页标签是否可关闭，layoutType设置首页布局方式（若要只显示头部导航栏，不显示侧边栏，可设置layoutType为top）。
 src/router/avue-router 中含有大量封装到路由中的方法，其中动态生成路由逻辑较复杂，已补充注释。
 
 ## 路由说明

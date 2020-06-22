@@ -258,10 +258,10 @@ export default {
                     self.searchLoading = false;
                     self.tableLoading = false;
                     self.requestFlag = false;
-                    self.userList =  res.data.list;
-                    self.total = res.data.totalCount;
-                    self.currentPage = res.data.currPage;
-                    self.size = res.data.pageSize;
+                    self.userList =  res.data.data;
+                    self.total = res.data.count;
+                    self.currentPage = res.data.current;
+                    self.size = res.data.size;
                 });
             },
             handleSelectionChange: function(val){
@@ -373,7 +373,7 @@ export default {
                     return false;
                 }
                 var self = this;
-                this.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {
+                this.$confirm('此操作将永久删除该数据, 是否继续?', '提示', {
                     confirmButtonText: '确定',
                     cancelButtonText: '取消',
                     type: 'warning'
@@ -387,7 +387,7 @@ export default {
                     self.requestFlag = true;
                     var params = JSON.stringify(userIds);
                     deleteUser(params).then(function(res){
-                        if(res.data >= 1){
+                        if(res.data.status==200){
                             self.$message({
                                 type: 'success',
                                 message: '删除成功!'
@@ -399,10 +399,15 @@ export default {
                             self.requestFlag = false;
                             self.$message({
                                 type: 'error',
-                                message: '删除失败!'
+                                message: res.message||'删除失败!'
                             });
                         }
-                    });
+                    }).catch(err=>{
+                        console.log(err)
+                        self.searchLoading = false;
+                        self.tableLoading = false;
+                        self.requestFlag = false;
+                    })
                 }).catch(function() {
                     self.searchLoading = false;
                     self.tableLoading = false;

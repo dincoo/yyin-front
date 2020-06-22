@@ -77,7 +77,7 @@
         </el-dialog>
         
         <el-dialog title="选择部门" :visible.sync="treeVisible" size="tiny" append-to-body>
-            <el-tree ref="departmentTree" :data="[topNode]" :props="defaultProps" @node-click="handleNodeClick"></el-tree>
+            <el-tree ref="departmentTree" :data="topNode" :props="defaultProps" @node-click="handleNodeClick"></el-tree>
             <div slot="footer" class="dialog-footer">
                 <el-button type="primary" @click.native="treeSubmit" :loading="treeLoading">确认</el-button>
                 <el-button @click.native="treeVisible = false">取消</el-button>
@@ -92,7 +92,7 @@ import {departList} from '@/api/sysManageApi/commonApi'
 export default {
     data: function() {
             return {
-                topNode:null,
+                topNode:[],
                 defaultProps:{
                     children:'children',
                     label:'name'
@@ -136,7 +136,7 @@ export default {
                     self.depData =listArr;
                     self.filterDepData = [];
                     self.depData.map(function(item){
-                        if(item.parentId == '0'){
+                        if(!item.parentId){
                             self.filterDepData.push(item);
                         }
                     });
@@ -243,7 +243,7 @@ export default {
                     return false;
                 }
                 var self = this;
-                this.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {
+                this.$confirm('此操作将永久删除该数据, 是否继续?', '提示', {
                     confirmButtonText: '确定',
                     cancelButtonText: '取消',
                     type: 'warning'
@@ -274,8 +274,8 @@ export default {
             },
             departmentSelect: function(){
                 this.treeVisible = true;
-                this.topNode=this.depData.find(item=>item.parentId==-1)
-                this.findChildren([this.topNode])
+                this.topNode=this.depData.filter(item=>!item.parentId)
+                this.findChildren(this.topNode)
                 console.log(this.topNode)
             },
             

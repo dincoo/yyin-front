@@ -7,15 +7,11 @@ export default [{
         path: 'index',
         name: '首页',
         meta: {
-            i18n: 'dashboard',
-            isAuth: false
+            i18n: 'dashboard'
         },
         component: () =>
             import ( /* webpackChunkName: "views" */ '@/views/wel')
-    }],
-    meta: {
-        isAuth: false
-    }
+    }]
 }, {
     path: '/test',
     component: Layout,

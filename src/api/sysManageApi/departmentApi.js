@@ -1,7 +1,8 @@
 import request from '@/router/axios';
+import { baseUrl } from '@/config/env';
 export const departAdd = function(params) { // 添加
     return request({
-        url: '/vz-island/sys/dept/save',
+        url: baseUrl + '/sys/dept/save',
         method: 'post',
         data: params
     });
@@ -9,7 +10,7 @@ export const departAdd = function(params) { // 添加
 
 export const departUpdate = function(params) { // 修改
     return request({
-        url: '/vz-island/sys/dept/update',
+        url: baseUrl + '/sys/dept/update',
         method: 'post',
         data: params
     });
@@ -17,7 +18,7 @@ export const departUpdate = function(params) { // 修改
 
 export const departDelete = function(params) { // 删除
     return request({
-        url: '/vz-island/sys/dept/delete/' + params,
+        url: baseUrl + '/sys/dept/delete/' + params,
         method: 'delete'
     });
 };

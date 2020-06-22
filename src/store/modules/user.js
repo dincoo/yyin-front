@@ -50,11 +50,13 @@ const user = {
     actions: {
         //根据用户名登录
         LoginByUsername({ commit }, userInfo) {
+            // console.log(userInfo)
             return new Promise((resolve, reject) => {
-                loginByUsername(userInfo.tenantId, userInfo.username, userInfo.password, userInfo.type, userInfo.key, userInfo.code).then(res => {
+                loginByUsername(userInfo).then(res => {
                     const data = res.data;
-                    commit('SET_TOKEN', data.accessToken);
-                    commit('SET_USERIFNO', data);
+                    console.log(data)
+                    commit('SET_TOKEN', data.token);
+                    // commit('SET_USERIFNO', data);
                     commit('DEL_ALL_TAG');
                     commit('CLEAR_LOCK');
                     resolve();
@@ -151,17 +153,19 @@ const user = {
             })
         },
         //获取系统菜单
-        GetMenu({ commit, dispatch }, parentId) {
+        GetMenu({ commit }, parentId) {
             return new Promise(resolve => {
                 getMenu(parentId).then((res) => {
                     const data = res.data.asider
+                        // console.log(data)
                     let menu = deepClone(data);
                     menu.forEach(ele => {
                             addPath(ele, true);
                         })
                         // commit('SET_MENU', menu)
+                    console.log(menu)
                     commit('SET_MENU_ALL', menu)
-                    dispatch('GetButtons');
+                        // dispatch('GetButtons');
                     resolve(menu)
                 })
             })

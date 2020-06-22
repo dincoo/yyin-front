@@ -26,11 +26,18 @@ module.exports = {
         port: 1888,
         // 反向代理配置
         proxy: {
-            '/vz-island': {
-                target: 'http://localhost:3618',
+            // '/api': {
+            //     target: 'http://localhost:3618',
+            //     ws: true,
+            //     pathRewrite: {
+            //         // '^/api': '/vz-island'
+            //     }
+            // },
+            '/api': {
+                target: 'http://192.168.87.55:8083',
                 ws: true,
                 pathRewrite: {
-                    // '^/api': '/vz-island'
+                    '^/api': ''
                 }
             }
         }

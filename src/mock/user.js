@@ -9,19 +9,7 @@ const userDetail = require('./jsonData/userDetail.json')
     // console.log(menuAll)
 let random = Math.random() * 500 + 500;
 // 访问 /user/ 时
-apiRoutes.post('/login', function(req, res) {
-    setTimeout(() => {
-        res.json({
-            httpCode: 200,
-            msg: "请求成功",
-            timestamp: 1589532854259,
-            data: {
-                accessToken: '1235656',
-                id: '12345'
-            }
-        });
-    }, random);
-});
+
 apiRoutes.get('/menu/list', function(req, res) {
     setTimeout(() => {
         res.json(menuAll);

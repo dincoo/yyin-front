@@ -82,7 +82,7 @@
           //租户ID
           tenantId: "000000",
           //用户名
-          username: "admin",
+          username: "superAdmin",
           //密码
           password: "123456",
           //账户类型
@@ -140,7 +140,13 @@
               text: '登录中,请稍后。。。',
               spinner: "el-icon-loading"
             });
-            this.$store.dispatch("LoginByUsername", this.loginForm).then(() => {
+            let param={
+              captcha:'123456',
+              passwd:this.loginForm.password,
+              userName:this.loginForm.username
+            }
+            this.$store.dispatch("LoginByUsername", param).then(() => {
+              console.log('goRouter')
               this.$router.push({path: this.tagWel.value});
               loading.close();
             }).catch(() => {
