@@ -34,7 +34,7 @@ module.exports = {
             //     }
             // },
             '/api': {
-                target: 'http://192.168.87.55:8083',
+                target: 'http://192.168.81.177:8088',
                 ws: true,
                 pathRewrite: {
                     '^/api': ''
