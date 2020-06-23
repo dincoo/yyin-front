@@ -12,9 +12,9 @@
             </el-row>
             <el-row style="margin-bottom:8px">
                 <el-col>
-                    <el-button shiro:hasPermission="sys:role:save" type="primary" size="small" icon="el-icon-plus" @click="addInfo">新增</el-button>
+                    <el-button  type="primary" size="small" icon="el-icon-plus" @click="addInfo">新增</el-button>
                     
-                    <el-button shiro:hasPermission="sys:role:delete" type="danger" size="small" icon="el-icon-delete" @click="deleteInfo">删除</el-button>
+                    <el-button  type="danger" size="small" icon="el-icon-delete" @click="deleteInfo">删除</el-button>
                 </el-col>
             </el-row>
             <el-row class="paddingTop10">
@@ -57,7 +57,7 @@
                         </el-table-column>
                         <el-table-column label=" 操作" width="120px">
                             <template slot-scope="scope">
-                                <el-button shiro:hasPermission="sys:role:update" type="text" size="small" icon="el-icon-edit" @click="modifyInfo(scope.row)">修改</el-button>
+                                <el-button  type="text" size="small" icon="el-icon-edit" @click="modifyInfo(scope.row)">修改</el-button>
                             </template>
                         </el-table-column>
                     </el-table>
@@ -87,13 +87,7 @@
                                   placeholder="角色名称"
                         ></el-input>
                     </el-form-item>
-                    <!--<el-form-item label="所属部门" prop="deptName">
-                        <el-input v-model="ruleForm.deptName"
-                                  placeholder="所属部门"
-                                  readonly="readonly"
-                                  @click.native="departmentSelect"
-                        ></el-input>
-                    </el-form-item>-->
+                    
                     <el-form-item label="备注" prop="remark">
                         <el-input v-model="ruleForm.remark"
                                   placeholder="备注"
@@ -102,14 +96,6 @@
                     <el-form-item label="功能权限">
                        <el-tree ref="roleTree" :data="zNodes02" node-key="id" :props="defaultProps" show-checkbox @check-change="handleCheckChange"></el-tree>
                     </el-form-item>
-                    <!-- <el-row style="padding-bottom: 10px;">
-                        <el-col :span="12">
-                            <span class="roleTitle">功能权限</span> -->
-                            <!-- <ul id="zTree02" class="ztree"></ul> -->
-                            <!-- <el-tree :data="zNodes02" :props="defaultProps" show-checkbox @check-change="handleCheckChange"></el-tree>
-                        </el-col>
-                       
-                    </el-row> -->
                 </el-form>
                 <div slot="footer">
                     <el-button type="primary" @click="submitForm('ruleForm')">确定</el-button>
@@ -329,8 +315,7 @@ export default {
                 this.showHide = true;
                 if(this.$refs["ruleForm"])
                     this.$refs["ruleForm"].resetFields();
-                // this.zTreeObj02.checkAllNodes(false);
-                // this.zTreeObj03.checkAllNodes(false);
+                this.$refs.roleTree.setCheckedKeys([])
             },
             modifyInfo: function(row){
                 var self = this;
@@ -357,19 +342,9 @@ export default {
                         // deptName: self.roleDetails.deptName,
                         remark: self.roleDetails.remark
                     };
-                    // self.roleDetails.menuIdList.map(function(item){
-                    //     var node =  self.zTreeObj02.getNodeByParam("id",item,null);
-                    //     self.zTreeObj02.selectNode(node);
-                    //     self.zTreeObj02.checkNode(node, true, false);
-                    //     self.zTreeObj02.updateNode(node);
-                    // });
+                    
                     this.$refs.roleTree.setCheckedKeys(this.roleDetails.menuIdList)
-                    /*self.roleDetails.deptIdList.map(function(item){
-                        var node =  self.zTreeObj03.getNodeByParam("id",item,null);
-                        self.zTreeObj03.selectNode(node);
-                        self.zTreeObj03.checkNode(node, true, false);
-                        self.zTreeObj03.updateNode(node);
-                    });*/
+                    
                 });
             },
 
@@ -392,12 +367,12 @@ export default {
                     self.multipleSelection.map( function(item){
                         roleIds.push(item.id);
                     });
-                    var params = JSON.stringify(roleIds);
+                    // var params = JSON.stringify(roleIds);
                     this.searchLoading = true;
                     this.tableLoading = true;
                     this.requestFlag = true;
-                    deleteRole(params).then((res)=>{
-                        if(res.data.code=='200'){
+                    deleteRole(roleIds).then((res)=>{
+                        if(res.code=='200'){
                             self.$message({
                                 type: 'success',
                                 message: '删除成功!'

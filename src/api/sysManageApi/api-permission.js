@@ -28,7 +28,7 @@ export const addApiPermission = function(params) {
 export const updateApiPermission = function(params) {
     return request({
         url: baseUrl + '/sys/api/update',
-        method: 'post',
+        method: 'put',
         data: params
     });
 };

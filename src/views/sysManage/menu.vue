@@ -66,9 +66,11 @@
                                 prop="perms"
                                 label="授权标识">
                         </el-table-column>
-                        <el-table-column label="操作">
+                        <el-table-column label="操作" width="320px">
                             <template slot-scope="scope">
-                                <el-button shiro:hasPermission="sys:menu:update" type="text" size="small" icon="el-icon-edit" @click="modifyInfo(scope.row)">修改</el-button>
+                                <el-button type="text" size="small" icon="el-icon-edit" @click="modifyInfo(scope.row)">修改</el-button>
+                                <el-button type="text" size="small" icon="el-icon-setting" @click="showSetting('ApiPermission',scope.row)">接口权限配置</el-button>
+                                <el-button type="text" size="small" icon="el-icon-setting" @click="showSetting('DataPermission',scope.row)">数据权限配置</el-button>
                             </template>
                         </el-table-column>
                     </el-table>
@@ -143,8 +145,8 @@
                 </el-tab-pane>
             </el-tabs>
         </el-dialog>
-        <el-drawer title="接口权限配置" :visible.sync="showApiPermissionDrawer" size="60%">
-            
+        <el-drawer :title="drawerTitle" :visible.sync="showApiPermissionDrawer" size="65%">
+            <component :is="curcomponent" :menuItem="selectRow"></component>
         </el-drawer>
     </basic-container>
 </template>
@@ -152,7 +154,13 @@
 import { menuSelectList,addMenu,ModifyMenu,menuDetails,deleteMenu} from '@/api/sysManageApi/menuApi'
 import {menuAllList} from '@/api/sysManageApi/commonApi'
 import iconList from "@/config/iconList";
+import ApiPermission from '@/components/sysManage/api-permission'
+import DataPermission from '@/components/sysManage/data-permission'
 export default {
+    components:{
+        ApiPermission,
+        DataPermission
+    },
     data(){
             Array.prototype.indexOf = function (val) {
                 for (var i = 0; i < this.length; i++) {
@@ -228,7 +236,9 @@ export default {
                 selectedTreeNode:null,
                 iconList:[],
                 showApiPermissionDrawer:false,
-                apiTableData:[]
+                selectRow:null,
+                curcomponent:'',
+                drawerTitle:''
             }
         },
         mounted: function () {
@@ -498,6 +508,13 @@ export default {
                 if(!this.addModifyFlag){
                     this.menuDetails.parentId = this.selectedTreeNode.id;
                 }
+            },
+            // 显示设置抽屉
+            showSetting(cur,row){
+                this.showApiPermissionDrawer=true
+                this.selectRow=row
+                this.curcomponent=cur
+                this.drawerTitle=cur=='ApiPermission'?'接口权限配置':'数据权限配置'
             }
         },
         filters: {

@@ -15,14 +15,6 @@ export const userDetails = function(params) { // 查询用户详情
     });
 };
 
-export const validateUserName = function(params) {
-    return request({
-        url: baseUrl + '/sys/user/validateUserName',
-        method: 'post',
-        data: params
-    });
-}
-
 export const addUser = function(params) { // 新增用户
     return request({
         url: baseUrl + '/sys/user/save',

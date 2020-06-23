@@ -4,9 +4,9 @@
         <div >
             <el-row>
                 <el-col>
-                    <el-button shiro:hasPermission="sys:dept:save" type="primary" size="small" icon="el-icon-plus" @click="addInfo">新增</el-button>
+                    <el-button  type="primary" size="small" icon="el-icon-plus" @click="addInfo">新增</el-button>
                     
-                    <el-button shiro:hasPermission="sys:dept:delete" type="danger" size="small" icon="el-icon-delete" @click="deleteInfo">删除</el-button>
+                    <el-button  type="danger" size="small" icon="el-icon-delete" @click="deleteInfo">删除</el-button>
                 </el-col>
             </el-row>
             <el-row class="paddingTop10">
@@ -40,7 +40,7 @@
                         </el-table-column>
                         <el-table-column label="操作" fixed="right">
                             <template slot-scope="scope">
-                                <el-button shiro:hasPermission="sys:dept:update" type="text" size="small" icon="el-icon-edit" @click="modifyInfo(scope.row)">修改</el-button>
+                                <el-button  type="text" size="small" icon="el-icon-edit" @click="modifyInfo(scope.row)">修改</el-button>
                             </template>
                         </el-table-column>
                     </el-table>
@@ -119,7 +119,7 @@ export default {
                         { min: 2, max: 10, message: '长度在 2 到 10 个字符', trigger: 'blur' }
                     ],
                     pDepartment: [
-                        { required: true, message: '请选择上级部门', trigger: 'blur' }
+                        { required: true, message: '请选择上级部门', trigger: 'change' }
                     ],
                     orderNum: [
                         { required: true, message: '排序号不能为空', trigger: 'blur' }
@@ -166,7 +166,7 @@ export default {
                             let params = {
                                 name: self.ruleForm.departmentName,
                                 id: "",
-                                parentId: self.selectZTreeData.id,
+                                parentId: self.ruleForm.parentId,
                                 orderNum: self.ruleForm.orderNum
                             };
                             departAdd(params).then(function(res){
@@ -249,7 +249,7 @@ export default {
                     type: 'warning'
                 }).then(function(){
                     departDelete(self.multipleSelection[0].id).then(function(res){
-                        if(res.data == 1){
+                        if(res.code == '200'){
                             self.$message({
                                 type: 'success',
                                 message: '删除成功!'
@@ -283,9 +283,9 @@ export default {
                 let selectNode = this.$refs.departmentTree.getCurrentNode();
                 this.ruleForm.pDepartment = selectNode.name;
                 this.treeVisible = false;
-                if(!this.addModifyFlag){
+                // if(!this.addModifyFlag){
                     this.ruleForm.parentId = selectNode.id;
-                }
+                // }
                 console.log(this.multipleSelection);
             }
         },

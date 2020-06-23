@@ -56,7 +56,7 @@ axios.interceptors.request.use(config => {
 axios.interceptors.response.use(res => {
     NProgress.done();
     // console.log(res)
-    const status = res.data.httpCode || res.status || 200
+    const status = res.data.httpCode || res.data.code || res.status || '200'
     const statusWhiteList = website.statusWhiteList || [];
     const message = res.data.data || res.data.message || '接口错误';
     //如果在白名单里则自行catch逻辑处理
@@ -64,7 +64,7 @@ axios.interceptors.response.use(res => {
     //如果是401则跳转到登录页面
     if (status === 401) store.dispatch('FedLogOut').then(() => router.push({ path: '/login' }));
     // 如果请求为非200否者默认统一处理
-    if (status !== 200) {
+    if (status != '200') {
         Message({
             message: message,
             type: 'error'

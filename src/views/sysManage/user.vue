@@ -12,9 +12,9 @@
             </el-row>
             <el-row>
                 <el-col :span="24">
-                    <el-button shiro:hasPermission="sys:user:save" type="primary" size="small" icon="el-icon-plus" @click="addInfo">新增</el-button>
+                    <el-button  type="primary" size="small" icon="el-icon-plus" @click="addInfo">新增</el-button>
                     
-                    <el-button shiro:hasPermission="sys:user:delete" type="danger" size="small" icon="el-icon-delete" @click="deleteInfo">删除</el-button>
+                    <el-button  type="danger" size="small" icon="el-icon-delete" @click="deleteInfo">删除</el-button>
                 </el-col>
             </el-row>
             <el-row class="paddingTop10">
@@ -75,7 +75,7 @@
                         </el-table-column>
                         <el-table-column label="操作" fixed="right">
                             <template slot-scope="scope">
-                                <el-button shiro:hasPermission="sys:user:update" type="text" size="small" icon="el-icon-edit" @click="modifyInfo(scope.row)">修改</el-button>
+                                <el-button  type="text" size="small" icon="el-icon-edit" @click="modifyInfo(scope.row)">修改</el-button>
                             </template>
                         </el-table-column>
                     </el-table>
@@ -142,10 +142,9 @@
     </basic-container>
 </template>
 <script>
-import {validateUserName,resetPwd,deleteUser,userDetails,ModifyUser,addUser,userList,roleSelectList} from '@/api/sysManageApi/adminApi'
+import {resetPwd,deleteUser,userDetails,ModifyUser,addUser,userList,roleSelectList} from '@/api/sysManageApi/adminApi'
 export default {
     data(){
-        var self = this;
             var validateEmail = function(rule, value, callback){
                 var reg = /^[a-z0-9]+([._\\-]*[a-z0-9])*@([a-z0-9]+[-a-z0-9]*[a-z0-9]+.){1,63}[a-z0-9]+$/;
                 if (value&&!reg.test(value.trim())) {
@@ -159,20 +158,6 @@ export default {
                     callback(new Error('手机号码不合法!'));
                 }else{
                     callback();
-                }
-            };
-            var validateUsername = function (rule,value,callback) {
-                if (!self.addModifyFlag){
-                    callback();
-                }else {
-                    var params = {username:value};
-                    validateUserName(params).then(function (res) {
-                        if(!res.data){
-                            callback(new Error('该用户名已存在！'));
-                        }else {
-                            callback();
-                        }
-                    })
                 }
             };
             const validRoleList=(rule,value,callback)=>{
@@ -207,8 +192,7 @@ export default {
                 rules: {
                     username: [
                         { required: true, message: '请输入用户名', trigger: 'blur' },
-                        { min: 2, max: 10, message: '长度在 2 到 10 个字符', trigger: 'blur' },
-                        { required:true, validator:validateUsername, trigger: 'blur' }
+                        { min: 2, max: 10, message: '长度在 2 到 10 个字符', trigger: 'blur' }
                     ],
                    
                     passwd: [
@@ -302,7 +286,7 @@ export default {
                                 /*deptId:self.userDetails.deptId*/
                             });
                             ModifyUser(params).then(function(res){
-                                if(res.data === 1){
+                                if(res.code == '200'){
                                     self.$message({type: 'success', message: '修改成功!'});
                                     self.showHide = false;
                                     self.getUserList(); // 重新获取数据列表;
@@ -360,7 +344,7 @@ export default {
                         email: self.userDetails.email,
                         mobile: self.userDetails.mobile,
                         roleIdList: self.userDetails.roleIdList,
-                        status: self.userDetails.status.toString(),
+                        status: self.userDetails.status||'',
                     };
                 });
             },
@@ -385,9 +369,9 @@ export default {
                     self.searchLoading = true;
                     self.tableLoading = true;
                     self.requestFlag = true;
-                    var params = JSON.stringify(userIds);
-                    deleteUser(params).then(function(res){
-                        if(res.data.status==200){
+                    // var params = JSON.stringify(userIds);
+                    deleteUser(userIds).then(function(res){
+                        if(res.status==200){
                             self.$message({
                                 type: 'success',
                                 message: '删除成功!'
