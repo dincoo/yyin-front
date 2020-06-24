@@ -18,7 +18,8 @@ export const departUpdate = function(params) { // 修改
 
 export const departDelete = function(params) { // 删除
     return request({
-        url: baseUrl + '/sys/dept/delete/' + params,
-        method: 'delete'
+        url: baseUrl + '/sys/dept/delete',
+        method: 'delete',
+        data: params
     });
 };

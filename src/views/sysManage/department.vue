@@ -237,7 +237,7 @@ export default {
             deleteInfo: function(){
                 if(this.multipleSelection.length == 0){
                     this.$message({
-                        message: '没有选中用户',
+                        message: '没有选中数据',
                         type: 'warning'
                     });
                     return false;
@@ -248,7 +248,8 @@ export default {
                     cancelButtonText: '取消',
                     type: 'warning'
                 }).then(function(){
-                    departDelete(self.multipleSelection[0].id).then(function(res){
+                    let ids=self.multipleSelection.map(item=>item.id)
+                    departDelete(ids).then(function(res){
                         if(res.code == '200'){
                             self.$message({
                                 type: 'success',

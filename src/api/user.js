@@ -30,7 +30,7 @@ export const getMenu = () => request({
 });
 
 export const getCaptcha = () => request({
-    url: '/api/blade-auth/oauth/captcha',
+    url: baseUrl + '/captcha.jpg',
     method: 'get'
 });
 

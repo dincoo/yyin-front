@@ -71,7 +71,7 @@
 <script>
   import {mapGetters} from "vuex";
   import website from '@/config/website';
-  // import {getCaptcha} from "@/api/user";
+  import {baseUrl} from '@/config/env';
   export default {
     name: "userlogin",
     data() {
@@ -121,11 +121,11 @@
     methods: {
       refreshCode() {
         // getCaptcha().then(res => {
-        //   const data = res.data;
-        //   this.loginForm.key = data.key;
-        //   this.loginForm.image = data.image;
+        //   // const data = res.data;
+        //   this.loginForm.image=res
         // })
-        this.loginForm.image=`/vz-island/captcha.jpg?t=${new Date().getTime()}`
+        // console.log('click')
+        this.loginForm.image=`${baseUrl}/captcha.jpg?t=${Date.now()}`
       },
       showPassword() {
         this.passwordType === ""
@@ -141,7 +141,7 @@
               spinner: "el-icon-loading"
             });
             let param={
-              captcha:'123456',
+              captcha:this.loginForm.code,
               passwd:this.loginForm.password,
               userName:this.loginForm.username
             }
