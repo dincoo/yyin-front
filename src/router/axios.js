@@ -58,11 +58,11 @@ axios.interceptors.response.use(res => {
     // console.log(res)
     const status = res.data.httpCode || res.data.code || res.status || '200'
     const statusWhiteList = website.statusWhiteList || [];
-    const message = res.data.data || res.data.message || '接口错误';
+    const message = (typeof res.data.data == 'string' && res.data.data) || res.data.message || '接口错误';
     //如果在白名单里则自行catch逻辑处理
     if (statusWhiteList.includes(status)) return Promise.reject(res);
     //如果是401则跳转到登录页面
-    if (status === 401) store.dispatch('FedLogOut').then(() => router.push({ path: '/login' }));
+    if (status == 401) store.dispatch('FedLogOut').then(() => router.push({ path: '/login' }));
     // 如果请求为非200否者默认统一处理
     if (status != '200') {
         Message({

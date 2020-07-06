@@ -1,0 +1,40 @@
+{
+    "data": {
+        "totalCount": 1,
+        "pageSize": 10,
+        "totalPage": 1,
+        "currPage": 1,
+        "data": [{
+            "id": "03bdfda4-e686-4acf-a625-e4c8d98a5b99",
+            "appId": "wxc4d9b816e55ae1f9",
+            "type": "1",
+            "createTime": "2020-07-02T16:00:00.000+0000",
+            "updateTime": "2020-07-02T16:00:00.000+0000",
+            "enable": "0",
+            "flag": null,
+            "status": "1",
+            "remark": null,
+            "replyType": "text",
+            "eventReply": {
+                "id": "fd0f1a44-c83f-4cd6-af40-095888c7c1fd",
+                "appId": "wxc4d9b816e55ae1f9",
+                "msgType": "text",
+                "content": "fddffdfd",
+                "title": null,
+                "description": null,
+                "mediaId": null,
+                "url": null,
+                "createTime": "2020-07-02T16:00:00.000+0000",
+                "updateTime": "2020-07-02T16:00:00.000+0000",
+                "enable": null,
+                "flag": null,
+                "status": "1",
+                "remark": null,
+                "matchingType": null
+            }
+        }]
+    },
+    "code": 200,
+    "msg": "请求成功",
+    "timestamp": 1593761691987
+}

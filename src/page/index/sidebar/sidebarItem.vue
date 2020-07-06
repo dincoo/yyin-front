@@ -1,18 +1,18 @@
 <template>
   <div class="menu-wrapper">
-    <template v-for="item in menu">
+    <template v-for="(item,index) in menu">
       <el-menu-item v-if="validatenull(item[childrenKey]) && vaildRoles(item)"
-                    :index="item[pathKey]"
+                    :index="index"
                     @click="open(item)"
-                    :key="item[labelKey]"
+                    :key="index"
                     :class="{'is-active':vaildAvtive(item)}">
         <i :class="item[iconKey]"></i>
         <span slot="title"
               :alt="item[pathKey]">{{generateTitle(item)}}</span>
       </el-menu-item>
       <el-submenu v-else-if="!validatenull(item[childrenKey])&&vaildRoles(item)"
-                  :index="item[pathKey]"
-                  :key="item[labelKey]">
+                  :index="index"
+                  :key="index">
         <template slot="title">
           <i :class="item[iconKey]"></i>
           <span slot="title"

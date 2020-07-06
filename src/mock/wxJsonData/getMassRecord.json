@@ -1,0 +1,14 @@
+{
+    "data": {
+        "totalCount": 0,
+        "pageSize": 10,
+        "totalPage": 0,
+        "currPage": 1,
+        "data": [
+
+        ]
+    },
+    "code": 200,
+    "msg": "请求成功",
+    "timestamp": 1593755707530
+}

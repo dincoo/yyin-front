@@ -9,6 +9,7 @@ import store from './store';
 import { loadStyle } from './util/util'
 import * as urls from '@/config/env';
 import Element from 'element-ui';
+import layer from 'vue-layer'
 import {
     iconfontUrl,
     iconfontVersion
@@ -17,7 +18,7 @@ import i18n from './lang' // Internationalization
 import './styles/common.scss';
 // require('./mock/index')
 import basicContainer from './components/basic-container/main'
-
+Vue.prototype.$layer = layer(Vue)
 Vue.use(router)
 Vue.use(VueAxios, axios)
 Vue.use(Element, {

@@ -1,0 +1,35 @@
+{
+    "code": "200",
+    "data": {
+        "count": 2,
+        "data": [{
+            "mediaId": "IVxEZ-6YICvAZ48XZ8FUgDRf2c74MMVl3LIOrpqC9Dg",
+            "updateTime": "2019-11-08T10:40:32.000+0000",
+            "content": {
+                "createTime": "2019-11-08T10:40:32.000+0000",
+                "updateTime": "2019-11-08T10:40:32.000+0000",
+                "articles": [{
+                    "thumbMediaId": "IVxEZ-6YICvAZ48XZ8FUgLhJTBuxBUUn4zUvB8mrNzc",
+                    "thumbUrl": "http://mmbiz.qpic.cn/mmbiz_gif/tEO7YHUDsX6QWQNnHkKGWhPhGhvic4T0me9Pd4bILsNSgSk fXG9Uviaqp2CDt4e8EjwQ9qYeFfghicDf0wJaT7Lcg/0?wx_fmt=gif",
+                    "author": "这个是作者3",
+                    "title": "这个是标题3",
+                    "contentSourceUrl": "",
+                    "content": "这个是富文本内容3",
+                    "digest": "这个是描述3",
+                    "showCoverPic": true,
+                    "url": "http://mp.weixin.qq.com/s? __biz=MzAxNTQ2NTM3OA==&mid=100000052&idx=1&sn=1d34147f414496fa8e8ca7872c4b960d&chksm=1b82ef f92cf566efadcff19fa2c14455883aa9bf7c792dac708facc7798228d7b75a22d81ef2#rd",
+                    "needOpenComment": false,
+                    "onlyFansCanComment": false
+                }],
+                "empty": false
+            }
+        }, { "mediaId": "IVxEZ-6YICvAZ48XZ8FUgOSrC6j5xUkd0i3HYOeBDqA", "updateTime": "2019-11-08T09:52:59.000+0000", "content": { "createTime": "2019-11-08T09:52:59.000+0000", "updateTime": "2019-11-08T09:52:59.000+0000", "articles": [{ "thumbMediaId": "IVxEZ-6YICvAZ48XZ8FUgLhJTBuxBUUn4zUvB8mrNzc", "thumbUrl": "http://mmbiz.qpic.cn/mmbiz_gif/tEO7YHUDsX6QWQNnHkKGWhPhGhvic4T0me9Pd4bILsNSgSk fXG9Uviaqp2CDt4e8EjwQ9qYeFfghicDf0wJaT7Lcg/0?wx_fmt=gif", "author": "这个是作者1", "title": "这个是标题1", "contentSourceUrl": "", "content": "这个是富文本内容1", "digest": "这个是描述1", "showCoverPic": true, "url": "http://mp.weixin.qq.com/s? __biz=MzAxNTQ2NTM3OA==&mid=100000051&idx=1&sn=6acb67b2f212bd9aec2dfa4bbaa3c08a&chksm=1b82ef fe2cf566e8d2e96f5dd1849c09564b855061c9fbba7b432faa1c8356f13fd1d3122aa5#rd", "needOpenComment": false, "onlyFansCanComment": false }, { "thumbMediaId": "IVxEZ-6YICvAZ48XZ8FUgBNIprDWOAUcTUpz1cIQhm0", "thumbUrl": "http://mmbiz.qpic.cn/mmbiz_png/tEO7YHUDsX5AvTdeKNKWY2apld7Ky5Ru3h6IpoiakLhhArg bAOpFsXF9VMSKtBKT8NFibzXe7cgB0QGMX5VDnKeA/0?wx_fmt=png", "author": "这个是作者2", "title": "这个是标题2", "contentSourceUrl": "", "content": "这个是富文本内容2", "digest": "这个是描述2", "showCoverPic": true, "url": "http://mp.weixin.qq.com/s? __biz=MzAxNTQ2NTM3OA==&mid=100000051&idx=2&sn=010cb5ced83333d867a3d4dbcd907feb&chksm=1b82ef fe2cf566e84bfa63eb8172aca9062241dba08146e3136aaedcbee9a9a32603cd569a56#rd", "needOpenComment": false, "onlyFansCanComment": false }], "empty": false } }],
+        "current": 1,
+        "size": 10,
+        "pageCount": 1,
+        "lastPage": false,
+        "nextPage": false
+    },
+    "errorCode": "0",
+    "message": "OK"
+}

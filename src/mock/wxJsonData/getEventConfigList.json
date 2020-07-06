@@ -1,0 +1,51 @@
+{
+    "data": {
+        "totalCount": 1,
+        "pageSize": 10,
+        "totalPage": 1,
+        "currPage": 1,
+        "data": [{
+            "id": "66b8fda0-5f4b-45d6-827a-014c1a20af3f",
+            "appId": "wxc4d9b816e55ae1f9",
+            "type": "3",
+            "replyId": "a989f4d4-4bdb-4dca-a22f-8b9f4a04b6a4",
+            "event": "SCAN",
+            "eventKey": "ffff",
+            "msgType": "SCAN",
+            "paramId": "",
+            "scanUrl": "https://mp.weixin.qq.com/cgi-bin/showqrcode?ticket=gQGS8DwAAAAAAAAAAS5odHRwOi8vd2VpeGluLnFxLmNvbS9xLzAySnFYdlJZOXBjTGoxY0VyMnh2Y3IAAgSo5v5eAwSA9AMA",
+            "scanTime": "259200",
+            "scanType": "0",
+            "isReply": "1",
+            "isParam": "0",
+            "handlerKey": "ddd",
+            "createTime": "2020-07-02T16:00:00.000+0000",
+            "updateTime": "2020-07-02T16:00:00.000+0000",
+            "enable": "1",
+            "flag": null,
+            "status": "1",
+            "remark": "",
+            "eventReply": {
+                "id": "a989f4d4-4bdb-4dca-a22f-8b9f4a04b6a4",
+                "appId": "wxc4d9b816e55ae1f9",
+                "msgType": "text",
+                "content": "",
+                "title": null,
+                "description": null,
+                "mediaId": null,
+                "url": null,
+                "createTime": "2020-07-02T16:00:00.000+0000",
+                "updateTime": "2020-07-02T16:00:00.000+0000",
+                "enable": null,
+                "flag": null,
+                "status": "1",
+                "remark": null,
+                "matchingType": null
+            },
+            "eventParamList": null
+        }]
+    },
+    "code": 200,
+    "msg": "请求成功",
+    "timestamp": 1593763501756
+}

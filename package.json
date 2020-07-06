@@ -5,7 +5,7 @@
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
-        "mock": "node src/mock/index.js",
+        "mock": " node src/mock/index.js",
         "lint": "vue-cli-service lint",
         "analyz": "npm_config_report=true npm run build",
         "test:unit": "vue-cli-service test:unit",
@@ -28,8 +28,10 @@
         "vue": "^2.6.10",
         "vue-axios": "^2.1.2",
         "vue-i18n": "^8.7.0",
+        "vue-layer": "^1.2.0",
         "vue-router": "^3.0.1",
-        "vuex": "^3.1.1"
+        "vuex": "^3.1.1",
+        "wangeditor": "^3.1.1"
     },
     "devDependencies": {
         "@babel/cli": "^7.8.4",

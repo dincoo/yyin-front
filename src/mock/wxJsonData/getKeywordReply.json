@@ -1,0 +1,48 @@
+{
+    "data": {
+        "totalCount": 1,
+        "pageSize": 10,
+        "totalPage": 1,
+        "currPage": 1,
+        "data": [{
+            "id": "140342fa-a05a-4e2b-a786-82aedf642b6f",
+            "appId": "wxc4d9b816e55ae1f9",
+            "type": "2",
+            "replyId": "bf3328be-a3b7-47c4-99a8-5b902156ff3e",
+            "event": null,
+            "eventKey": null,
+            "msgType": null,
+            "paramId": null,
+            "handlerKey": null,
+            "createTime": "2020-07-01T16:00:00.000+0000",
+            "updateTime": "2020-07-01T16:00:00.000+0000",
+            "enable": null,
+            "flag": null,
+            "status": "1",
+            "remark": null,
+            "replyType": "image",
+            "matchingType": "0",
+            "keyword": "test",
+            "eventReply": {
+                "id": "bf3328be-a3b7-47c4-99a8-5b902156ff3e",
+                "appId": "wxc4d9b816e55ae1f9",
+                "msgType": "image",
+                "content": null,
+                "title": null,
+                "description": null,
+                "mediaId": "hudllx3z85GjHQzaCHeUl67gto57HevxfJE7Obemq9c",
+                "url": "http://mmbiz.qpic.cn/mmbiz_png/2iaQJgnFjdfhgWAO4GKMKo5icF50WogZSIVZfqDFopxHpibOfc5Z3xdY43rslx9kibbl2aguF1Riaq6qIzS9Tsa0qBQ/0?wx_fmt=png",
+                "createTime": "2020-07-01T16:00:00.000+0000",
+                "updateTime": "2020-07-01T16:00:00.000+0000",
+                "enable": null,
+                "flag": null,
+                "status": "1",
+                "remark": null,
+                "matchingType": "0"
+            }
+        }]
+    },
+    "code": 200,
+    "msg": "请求成功",
+    "timestamp": 1593761974360
+}

@@ -76,6 +76,80 @@ apiRoutes.get('/menu/listMenu', function(req, res) {
                     parentId: "120",
                     url: "#",
                 }, {
+                    id: "3",
+                    parentId: "122",
+                    url: "#",
+                    name: "微信后台管理",
+                    indexNum: "3",
+                    iconClass: "fa fa-cog",
+                    children: [{
+                        name: "用户管理",
+                        path: "/wxManage/wx-user-manage",
+                        id: "wx-user-manage",
+                        indexNum: "3-1"
+                    }, {
+                        name: "群发记录",
+                        path: "/wxManage/wx-mass-message",
+                        id: "wx-mass-message",
+                        indexNum: "3-2"
+                    }, {
+                        name: "菜单设置",
+                        path: "/wxManage/wx-menu-manage",
+                        id: "wx-menu-manage",
+                        indexNum: "3-3"
+                    }]
+                }, {
+                    id: "4",
+                    parentId: "122",
+                    url: "#",
+                    name: "素材管理",
+                    indexNum: "4",
+                    iconClass: "fa fa-cog",
+                    children: [{
+                        "name": "图片管理",
+                        "path": "/wxManage/wx-material-picture-manage",
+                        "id": "wx-material-picture-manage",
+                        "indexNum": "4-1"
+                    }, {
+                        "name": "语音管理",
+                        "path": "/wxManage/wx-material-voice-manage",
+                        "id": "wx-material-voice-manage",
+                        "indexNum": "4-2"
+                    }, {
+                        "name": "视频管理",
+                        "path": "/wxManage/wx-material-video-manage",
+                        "id": "wx-material-video-manage",
+                        "indexNum": "4-3"
+                    }, {
+                        "name": "图文管理",
+                        "path": "/wxManage/wx-material-news-manage",
+                        "id": "wx-material-news-manage",
+                        "indexNum": "4-4"
+                    }]
+                }, {
+                    id: "5",
+                    parentId: "122",
+                    url: "#",
+                    name: "消息回复",
+                    indexNum: "5",
+                    iconClass: "fa fa-cog",
+                    children: [{
+                        "name": "关注时回复",
+                        "path": "/wxManage/wx-attention-reply",
+                        "id": "wx-attention-reply",
+                        "indexNum": "5-1"
+                    }, {
+                        "name": "关键词回复",
+                        "path": "/wxManage/wx-key-reply",
+                        "id": "wx-key-reply",
+                        "indexNum": "5-2"
+                    }, {
+                        "name": "其他回复",
+                        "path": "/wxManage/wx-other-reply",
+                        "id": "wx-other-reply",
+                        "indexNum": "5-3"
+                    }]
+                }, {
                     "name": "示例",
                     "url": "#",
                     iconClass: "iconfont iconicon_savememo",
@@ -116,6 +190,14 @@ apiRoutes.get('/menu/listMenu', function(req, res) {
                     name: "应用中心",
                     parentId: "",
                     url: "/indexPage/applyCenter"
+                }, {
+                    children: [],
+                    iconClass: "fas fa-tablet-alt",
+                    id: "122",
+                    indexNum: "2",
+                    name: "微信应用",
+                    parentId: "",
+                    url: ""
                 }]
             }
         });

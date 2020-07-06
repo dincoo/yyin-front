@@ -1,0 +1,44 @@
+{
+    "data": {
+        "button": [{
+                "name": "菜单名称",
+                "sub_button": [
+
+                ],
+                "type": "view",
+                "url": "http://www.baidu.com"
+            },
+            {
+                "name": "菜单名称",
+                "sub_button": [
+
+                ],
+                "type": "click",
+                "key": "123"
+            },
+            {
+                "name": "菜单名称",
+                "sub_button": [{
+                        "name": "子菜单名称",
+                        "sub_button": [
+
+                        ],
+                        "type": "view",
+                        "url": "https://www.baidu.com"
+                    },
+                    {
+                        "name": "子菜单名称",
+                        "sub_button": [
+
+                        ],
+                        "type": "pic_photo_or_album",
+                        "key": "123456"
+                    }
+                ]
+            }
+        ]
+    },
+    "code": 200,
+    "msg": "请求成功",
+    "timestamp": 1593755306913
+}
