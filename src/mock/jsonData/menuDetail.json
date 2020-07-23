@@ -19,7 +19,7 @@
         "updateTime": "2019-04-09 09:54:57",
         "uri": "/indexPage/manageCenter"
     },
-    "httpCode": 200,
+    "code": 200,
     "msg": "请求成功",
     "timestamp": 1590378268010
 }

@@ -161,7 +161,7 @@ RouterPlugin.install = function(vue, router, store, i18n) {
                 if (!this.routerList.includes(aRouter[0][propsDefault.path])) { //保存一级菜单路由
                     this.safe.$router.addRoutes(aRouter)
                     this.routerList.push(aRouter[0][propsDefault.path])
-                    console.log(this.routerList)
+                    console.log(aRouter)
                 }
             } else {
                 return aRouter

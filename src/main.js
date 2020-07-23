@@ -22,6 +22,7 @@ Vue.prototype.$layer = layer(Vue)
 Vue.use(router)
 Vue.use(VueAxios, axios)
 Vue.use(Element, {
+    size: 'medium',
     i18n: (key, value) => i18n.t(key, value)
 })
 Vue.use(window.AVUE, {

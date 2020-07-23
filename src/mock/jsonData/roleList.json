@@ -120,7 +120,7 @@
         "totalCount": 6,
         "totalPage": 1
     },
-    "httpCode": 200,
+    "code": 200,
     "msg": "请求成功",
     "timestamp": 1590386013755
 }

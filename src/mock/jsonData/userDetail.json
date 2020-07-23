@@ -20,7 +20,7 @@
         "updateTime": "2019-06-04 17:21:10",
         "username": "admin"
     },
-    "httpCode": 200,
+    "code": 200,
     "msg": "请求成功",
     "timestamp": 1590390130527
 }

@@ -15,7 +15,7 @@
         "updateBy": "admin",
         "updateTime": "2019-03-13 14:25:03"
     },
-    "httpCode": 200,
+    "code": 200,
     "msg": "请求成功",
     "timestamp": 1590395505575
 }

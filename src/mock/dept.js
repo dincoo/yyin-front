@@ -12,7 +12,7 @@ apiRoutes.post('/update', function(req, res) {
     setTimeout(() => {
         res.json({
             data: 1,
-            httpCode: 200,
+            code: 200,
             msg: "请求成功",
             timestamp: 1590378579738
         });
@@ -22,7 +22,7 @@ apiRoutes.post('/save', function(req, res) {
     setTimeout(() => {
         res.json({
             data: 1,
-            httpCode: 200,
+            code: 200,
             msg: "请求成功",
             timestamp: 1590378579738
         });
@@ -32,7 +32,7 @@ apiRoutes.delete('/delete', function(req, res) {
     setTimeout(() => {
         res.json({
             data: 1,
-            httpCode: 200,
+            code: 200,
             msg: "请求成功",
             timestamp: 1590378579738
         });

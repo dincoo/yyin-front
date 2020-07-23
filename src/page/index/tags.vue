@@ -130,6 +130,7 @@ export default {
         src: tag.value,
         i18n: tag.meta.i18n
       })
+      
       let route=this.$router.match(path)
       route.meta.keepAlive=true
       this.$router.push({

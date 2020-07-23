@@ -42,4 +42,19 @@ export default [{
         component: () =>
             import ( /* webpackChunkName: "views" */ '@/views/user/info')
     }]
+}, {
+    path: '/collection/collection-detail',
+    name: 'CollectionDetail',
+    component: () =>
+        import ('@/page/index/'),
+    redirect: '/collection/collection-detail/index',
+    children: [{
+        path: 'index',
+        name: '采集详情',
+        meta: {
+            isAuth: true
+        },
+        component: () =>
+            import ( /* webpackChunkName: "views" */ '@/views/collection/collection-detail')
+    }]
 }]

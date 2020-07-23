@@ -267,6 +267,7 @@
 <script>
 import {getUserList,synchronousData,getTags,usersAddTags,usersDeleteTags,createTag,deleteTags,updateTags,setUserRemark} from '@/api/wxManageApi/wx-user-list'
 import {paddZero} from '@/util/util'
+
 export default {
     data() {
         return {

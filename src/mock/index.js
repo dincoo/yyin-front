@@ -15,7 +15,7 @@ app.listen('3618', () => {
 app.post('/api/login', function(req, res) {
     setTimeout(() => {
         res.json({
-            httpCode: 200,
+            code: 200,
             msg: "请求成功",
             timestamp: 1589532854259,
             data: {

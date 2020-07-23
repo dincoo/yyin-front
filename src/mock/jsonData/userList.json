@@ -1,7 +1,7 @@
 {
     "data": {
         "currPage": 1,
-        "list": [{
+        "data": [{
                 "createBy": "",
                 "createTime": null,
                 "deptId": "dp550339728806797312",
@@ -111,7 +111,7 @@
         "totalCount": 5,
         "totalPage": 1
     },
-    "httpCode": 200,
+    "code": 200,
     "msg": "请求成功",
     "timestamp": 1590393576265
 }

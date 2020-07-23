@@ -29,7 +29,7 @@ apiRoutes.put('/menu/update', function(req, res) {
     setTimeout(() => {
         res.json({
             data: 1,
-            httpCode: 200,
+            code: 200,
             msg: "请求成功",
             timestamp: 1590378579738
         });
@@ -39,7 +39,7 @@ apiRoutes.post('/menu/save', function(req, res) {
     setTimeout(() => {
         res.json({
             data: 1,
-            httpCode: 200,
+            code: 200,
             msg: "请求成功",
             timestamp: 1590378579738
         });
@@ -49,7 +49,7 @@ apiRoutes.delete('/menu/delete', function(req, res) {
     setTimeout(() => {
         res.json({
             data: 1,
-            httpCode: 200,
+            code: 200,
             msg: "请求成功",
             timestamp: 1590378579738
         });
@@ -58,7 +58,7 @@ apiRoutes.delete('/menu/delete', function(req, res) {
 apiRoutes.get('/menu/listMenu', function(req, res) {
     setTimeout(() => {
         res.json({
-            httpCode: 200,
+            code: 200,
             msg: "请求成功",
             timestamp: 1589532854259,
             data: {
@@ -150,6 +150,24 @@ apiRoutes.get('/menu/listMenu', function(req, res) {
                         "indexNum": "5-3"
                     }]
                 }, {
+                    children: [{
+                        name: '采集查询',
+                        id: '6-1',
+                        indexNum: "6-1",
+                        path: "/collection/collection-list"
+                    }, {
+                        name: '字段集',
+                        id: '6-2',
+                        indexNum: "6-2",
+                        path: "/collection/field-manage"
+                    }],
+                    iconClass: "fa fa-cog",
+                    id: "6",
+                    indexNum: "6",
+                    name: "采集",
+                    parentId: "120",
+                    url: "#"
+                }, {
                     "name": "示例",
                     "url": "#",
                     iconClass: "iconfont iconicon_savememo",
@@ -212,7 +230,7 @@ apiRoutes.put('/user/update', function(req, res) {
     setTimeout(() => {
         res.json({
             data: 1,
-            httpCode: 200,
+            code: 200,
             msg: "请求成功",
             timestamp: 1590378579738
         });
@@ -222,7 +240,7 @@ apiRoutes.post('/user/save', function(req, res) {
     setTimeout(() => {
         res.json({
             data: 1,
-            httpCode: 200,
+            code: 200,
             msg: "请求成功",
             timestamp: 1590378579738
         });
@@ -232,7 +250,7 @@ apiRoutes.delete('/user/delete', function(req, res) {
     setTimeout(() => {
         res.json({
             data: 1,
-            httpCode: 200,
+            code: 200,
             msg: "请求成功",
             timestamp: 1590378579738
         });
@@ -241,6 +259,16 @@ apiRoutes.delete('/user/delete', function(req, res) {
 apiRoutes.get('/user/info/:userId', function(req, res) {
     setTimeout(() => {
         res.json(userDetail);
+    }, random);
+});
+apiRoutes.get('/logout', function(req, res) {
+    setTimeout(() => {
+        res.json({
+            data: 1,
+            code: 200,
+            msg: "请求成功",
+            timestamp: 1590378579738
+        });
     }, random);
 });
 module.exports = apiRoutes;
